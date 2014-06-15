@@ -1,0 +1,17 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="" dir="">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8">
+	<title>New page</title>
+</head>
+<body>
+ <img http://orilider.com/images/logo_gray.png {
+   width: 169;
+   height: 33;
+   position: fixed;
+   top: 0;
+   left: 0; }
+ ></img>
+ <img width="2406" height="2230" src="http://img-fotki.yandex.ru/get/6111/41487814.1/0_73caa_f9e35552_orig.jpg"></img>
+ </body>
+ </html>
