@@ -12,6 +12,10 @@ echo "hello world" ;
 print_r($_POST);
 print_r($_GET);
 
+echo "hello world" ;
+print_r($_POST);
+print_r($_GET);
+
 ?>
                                                                           <marquee><h1>Привет мир!!!</h1><img src="http://ic.pics.livejournal.com/fastcult/50338851/1351730/1351730_original.jpg"></marquee>
 
