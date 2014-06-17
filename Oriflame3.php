@@ -33,15 +33,15 @@ if ( empty($_GET['name']) ) {
 	 <table border="0">
 	  <tr>
 	   <td>Family name</td>
-	   <td><input name="surname" type="text" size="33" ></td>
+	   <td><input name="surname" type="text" size="33"/></td>
 	  </tr>
 	  <tr>
 	   <td>Name and First Name</td>
-	   <td><input name="name" type="text" size="33" ></td>
+	   <td><input name="name" type="text" size="33"/></td>
 	  </tr>
 	  <tr>
 	   <td>Passport</td>
-	   <td><input name="passport" type="text" size="33" placeholder="series and number"</td>
+	   <td><input name="passport" type="text" size="33" placeholder="series and number"/></td>
 	  </tr>
 	  <tr>
 	   <td>Birthday</td>
@@ -73,8 +73,8 @@ if ( empty($_GET['name']) ) {
 						echo '<option value="'.$k.'">'.$v.'</option>';}
 						?>
 						</select>											
-						<option value="0">Month</option><option value="01">January</option><option value="2">February</option></select>
-						<input name="year" type="text" placeholder="19XX" size="6" maxlength="4"> </td>				
+						<option value="0">Month</option><option value="01">January</option><option value="2">February</option>
+						<input name="year" type="text" placeholder="19XX" size="6" maxlength="4"/></td>				
 	  </tr>
 	  <tr>
 	   <td>Country</td>
@@ -96,34 +96,34 @@ if ( empty($_GET['name']) ) {
 	  </tr>
 	  <tr>
 	   <td>Region</td>
-	   <td><input name="region" type="text" size="33"></td>
+	   <td><input name="region" type="text" size="33"/></td>
 	  </tr>
 	  <tr>
 	   <td>Locality</td>
-	   <td><input name="locality" type="text" size="33" " placeholder="name of the city or village"></td>
+	   <td><input name="locality" type="text" size="33" " placeholder="name of the city or village"/></td>
 	  </tr>
 	  <tr>
 	   <td>Address</td>
-	   <td><input name="address" type="text" size="33" " placeholder="street name, house, apartment"></td>
+	   <td><input name="address" type="text" size="33" " placeholder="street name, house, apartment"/></td>
 	  </tr>
 	  <tr>
 	   <td>Postcode</td>
-	   <td><input name="postcode" type="text" size="33" "></td>
+	   <td><input name="postcode" type="text" size="33"/></td>
 	  </tr>
 	  <tr>
 	   <td>Mobile phone</td>
-	   <td><input name="mobile phone" type="text" size="33" " placeholder="in international format"></td>
+	   <td><input name="mobile phone" type="text" size="33" " placeholder="in international format"/></td>
 	  </tr>
 	  <tr>
 	   <td>E-mail</td>
-	   <td><input name="e-mail" type="text" size="33" "></td>
+	   <td><input name="e-mail" type="text" size="33"/></td>
 	  </tr>
 	  <tr>
 	   <td><input name="f1" type="checkbox"></td>
 	   <td>I accept the conditions of registration</td>
 	  </tr>
 	  <tr>
-	   <td><input name="f2" type="hidden" value="1" /><input type="submit" value="Sign in Oriflame"></td>
+	   <td><input name="f2" type="hidden" value="1"/><input type="submit" value="Sign in Oriflame"></td>
 	  </tr>
 	 </table>
 	 </td>
@@ -140,7 +140,6 @@ if ( empty($_GET['name']) ) {
 	</tr>
 	   </table>
 </table>
-</script>
 <hr heidth="20px" width="900px">
 </hr>
 <table style="margin-left: 790px;">
@@ -152,7 +151,7 @@ if ( empty($_GET['name']) ) {
  <tr>
   <td>2003-2014 Community independent consultants Oriflame Cosmetics</td>
  </tr>
- 		  </form>
+ 		  
    <p><input type="hidden" name="submitted" value="1" /></p>	  
 <?php  } elseif ($screen==2) { ?>
 	<center><h1>You have mistake please fill all fields.</h1></center>	   	
@@ -168,5 +167,6 @@ if ( empty($_GET['name']) ) {
 		<p><?php echo $_GET["e-mail"]; ?>		
 <?php } ?>
 </table>
+       </form>
  </body>
  </html>
