@@ -156,8 +156,16 @@ if ( empty($_GET['name']) ) {
    <p><input type="hidden" name="submitted" value="1" /></p>	  
 <?php  } elseif ($screen==2) { ?>
 	<center><h1>You have mistake please fill all fields.</h1></center>	   	
-
-		
+<?php }else { ?>
+	<center><h1>Thanks for the registration!</h1></center>
+		<p><?php echo $_GET["surname"]; ?>
+	    <p><?php echo $_GET['name']; ?>
+		<p><?php echo $_GET["passport"]; ?>		
+		<p><?php echo $_GET["region"]; ?>
+		<p><?php echo $_GET["locality"]; ?>
+		<p><?php echo $_GET["postcode"]; ?>
+		<p><?php echo $_GET["mobile phone"]; ?>
+		<p><?php echo $_GET["e-mail"]; ?>		
 <?php } ?>
 </table>
  </body>
