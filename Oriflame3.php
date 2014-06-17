@@ -3,11 +3,6 @@
 $day_b=array(1,2,3,4,5,6,7,8,9,10);
 $month=array("January","February","March","April","May","June","July","August","September","October","November","December");
 $country=array("Belarus","Russia","Ukraine","Kazakhstan","Austria","Japan","Canada");
-$fields2 = array(
-    "key"  => "value",
-    "key2" => "value2",
-    "key3" => "value3");
-print_r($fields);
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="" dir="">
 <head>
@@ -17,28 +12,15 @@ print_r($fields);
 </head>
 <body style="background-image:url(http://img-fotki.yandex.ru/get/6111/41487814.1/0_73caa_f9e35552_orig.jpg)">
 <?php 
-$screen=1;
- if (isset($_GET['f2']) && $_GET['f2']==1 ) {
-  $screen=3; 
-  
-	$fields = array("surname","name","passport","region","locality","address","postcode","mobile_phone","e-mail");
-	$bad=0;
-     foreach ($fields as $value){
-	 print_r($value);
-	 echo "<br/>";
-	 // $_GET($value)
-	 // $value="surname";
-	 // $bad=$bad+1;
-	 }
-}
-	// type: array
-	// foreach
-	// function: in_array
-	 
+ $screen=1;
+if (isset($_GET['submitted']) && $_GET['submitted']==1 ) {
+ $screen=3; 
+if ( empty($_GET['name']) ) {
+ $screen=2;
+	}
+	}
 ?>
 <?php if ($screen==1) { ?>
-
-
 <table border="0" width="900px" style="margin:auto;">
       <td><img src="http://orilider.com/images/logo_gray.png" style="margin-left: 350px;" /></img>
  <table border="0" >
@@ -96,7 +78,7 @@ $screen=1;
 	  </tr>
 	  <tr>
 	   <td>Country</td>
-	   <td align="left"><select name="country" style="width:45%" >	  
+	   <td align="left"><select name="month" style="width:45%" >	  
 	    <?php		
 		asort($country);
 		foreach ($country as $k=>$v) {
@@ -158,10 +140,6 @@ $screen=1;
 	</tr>
 	   </table>
 </table>
-<script type="text/javascript">
-function  WhiteBG(obj) {
- obj.style.backgroundColor="red";
-}
 </script>
 <hr heidth="20px" width="900px">
 </hr>
@@ -175,21 +153,11 @@ function  WhiteBG(obj) {
   <td>2003-2014 Community independent consultants Oriflame Cosmetics</td>
  </tr>
  		  </form>
-	  <?php  } elseif ($screen==3) { ?>
+   <p><input type="hidden" name="submitted" value="1" /></p>	  
+<?php  } elseif ($screen==2) { ?>
+	<center><h1>You have mistake please fill all fields.</h1></center>	   	
 
-	<center><h1>You have mistake please fill all fields.</h1></center>
-	
-
-<?php }else { ?>
-	<center><h1>Thanks for the registration!</h1></center>
-		<p><?php echo $_GET['surname']; ?>
-	    <p><?php echo $_GET['name']; ?>
-		<p><?php echo $_GET['passport']; ?>		
-		<p><?php echo $_GET['region']; ?>
-		<p><?php echo $_GET['locality']; ?>
-		<p><?php echo $_GET['postcode']; ?>
-		<p><?php echo $_GET['mobile phone']; ?>
-		<p><?php echo $_GET['e-mail']; ?>
+		
 <?php } ?>
 </table>
  </body>

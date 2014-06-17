@@ -43,7 +43,7 @@ if (isset($_GET['submitted']) && $_GET['submitted']==1 ) {
 
 	<center><h1>You have mistake please fill all fields.</h1></center>
 	<?php echo $_GET['firstname']; ?>
-
+    
 <?php }else { ?>
 	<center><h1>Thanks for the registration!</h1></center>
 <?php } ?>
