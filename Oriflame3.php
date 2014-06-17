@@ -72,8 +72,7 @@ if ( empty($_GET['name']) ) {
 						foreach ($month as $k=>$v) {
 						echo '<option value="'.$k.'">'.$v.'</option>';}
 						?>
-						</select>											
-						<option value="0">Month</option><option value="01">January</option><option value="2">February</option>
+						</select>																
 						<input name="year" type="text" placeholder="19XX" size="6" maxlength="4"/></td>				
 	  </tr>
 	  <tr>
