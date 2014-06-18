@@ -93,6 +93,7 @@ if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empt
     <td>
 	  <input name="f1" type="checkbox">I accept Terms of Use of the ulD community<br>
 	  <input name="submitted" type="hidden" value="1"/><input type="submit" value="Sign Up"/>
+	<input id="js_button" type="button" value="click me for javascript" />
 	 </td>
    </tr>
    <?php  } elseif ($screen==2) { ?>
@@ -129,7 +130,10 @@ $( document ).ready(function() { //when page is loaded.
 //alert( $('#email').val() );
 
 //#3 
-
+$( "#js_button" ).click(function() {
+  alert( "Handler for .click() called." );
+  alert( $('#email').val() );
+});
 
 });
 
