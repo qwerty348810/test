@@ -16,7 +16,7 @@ $year=array(2014,2013,2012,2011,2009,2008,2007,2006,1990);
  $screen=1;
 if (isset($_GET['submitted']) && $_GET['submitted']==1 ) {
  $screen=3; 
-if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empty($_GET['nname'])||empty($_GET['email'])||empty($_GET['sex']) ) {
+if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empty($_GET['nname'])||empty($_GET['email'])||empty($_GET['sex'])||empty($_GET['f1']) ) {
  $screen=2;
 	}
 	}
@@ -95,16 +95,23 @@ if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empt
 	 </td>
    </tr>
    <?php  } elseif ($screen==2) { ?>
-	<center><h1>You have mistake please fill all fields.</h1></center>	   	
-<?php }else { ?>
+	<center><h1>You have mistake please fill all fields.</h1></center>	
+   <p align="center"><?php if (empty($_GET["name"])) { echo   "enter the name";} ?><br>
+                     <?php if (empty($_GET["password"])) { echo   "enter the password";} ?><br>
+                     <?php if (empty($_GET["lname"])) { echo   "enter the Last Name";} ?><br>
+                     <?php if (empty($_GET["nname"])) { echo   "enter the Nickname";} ?><br>
+                     <?php if (empty($_GET["email"])) { echo   "enter the email";} ?><br>
+					 <?php if (empty($_GET["sex"])) { echo   "choose the sex";} ?><br>
+					 <?php if (empty($_GET["f1"])) { echo   "choose I accept Terms of Use of the ulD community";} ?></p>
+   <?php }else { ?>
 	<center><h1>Thanks for the registration!</h1></center>
 		<p align="center"><?php echo $_GET["surname"]; ?>
-	    <?php echo $_GET["name"]; ?><br>
-		<?php echo $_GET["password"]; ?><br>		
-		<?php echo $_GET["lname"]; ?><br>
-		<?php echo $_GET["nname"]; ?><br>		
-		<?php echo $_GET["email"]; ?></p>		
-<?php } ?>
+	                      <?php echo $_GET["name"]; ?><br>
+		                  <?php echo $_GET["password"]; ?><br>		
+		                  <?php echo $_GET["lname"]; ?><br>
+		                  <?php echo $_GET["nname"]; ?><br>		
+		                  <?php echo $_GET["email"]; ?></p>		
+   <?php } ?>
 
   </table>
   </form>
