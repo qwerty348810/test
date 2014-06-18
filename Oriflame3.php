@@ -117,14 +117,14 @@ if ( empty($_GET['name'])||empty($_GET['surname'])||empty($_GET['passport'])||em
 	<center><h1>You have mistake please fill all fields.</h1></center>	   	
 <?php }else { ?>
 	<center><h1>Thanks for the registration!</h1></center>
-		<p><?php echo $_GET["surname"]; ?>
-	    <p><?php echo $_GET["name"]; ?>
-		<p><?php echo $_GET["passport"]; ?>		
-		<p><?php echo $_GET["region"]; ?>
-		<p><?php echo $_GET["locality"]; ?>
-		<p><?php echo $_GET["postcode"]; ?>
-		<p><?php echo $_GET["mobile"]; ?>
-		<p><?php echo $_GET["e-mail"]; ?>		
+		<p align="center"><?php echo $_GET["surname"]; ?>
+	    <?php echo $_GET["name"]; ?><br>
+		<?php echo $_GET["passport"]; ?><br>		
+		<?php echo $_GET["region"]; ?><br>
+		<?php echo $_GET["locality"]; ?><br>
+		<?php echo $_GET["postcode"]; ?><br>
+		<?php echo $_GET["mobile"]; ?><br>
+		<?php echo $_GET["e-mail"]; ?></p>		
 <?php } ?>
 </table>       
  </body>
