@@ -10,6 +10,7 @@ $year=array(2014,2013,2012,2011,2009,2008,2007,2006,1990);
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta charset="utf-8">
 	<title>New page</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
  <body>
  <?php 
@@ -115,6 +116,10 @@ if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empt
 
   </table>
   </form>
+<script type="text/javascript">
+
+</script>
+
 
  </body>
 </html>
