@@ -24,31 +24,31 @@ if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empt
 ?>
 <?php if ($screen==1) { ?>
  <form action="forum.php" method="get" >
-  <table border="1" style="margin:auto;">
-   <tr>
-    <td>Email</td>
-	<td><input id="email" name="email" type="text" size="33"/></td>
-   </tr>
+  <table border="1" style="margin:auto;" bordercolor="#EEEEEE">
+    <tr>
+     <td>Email</td>
+	 <td><input id="email" name="email" type="text" size="33"/></td>
+    </tr>
     <tr>
      <td>Password</td>
 	 <td><input name="password" type="text" size="33"/></td>
-   </tr>
+    </tr>
     <tr>
      <td>Name</td>
 	 <td><input name="name" type="text" size="33"/></td>
-   </tr>
+    </tr>
     <tr>
      <td>Last Name</td>
 	 <td><input name="lname" type="text" size="33"/></td>
-   </tr>
+    </tr>
     <tr>
      <td>Nickname</td>
 	 <td><input name="nname" type="text" size="33"/></td>
-   </tr>
+    </tr>
    <tr>
    <td>Date of birth</td>
     <td>
-     <select name="day">
+     <select name="day_b">
 	    <?php                    
 		asort($day_b);
 		foreach ($day_b as $k=>$v) {						
@@ -96,26 +96,27 @@ if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empt
 	<input id="js_button" type="button" value="click me for javascript" />
 	 </td>
    </tr>
+   </table>
    <?php  } elseif ($screen==2) { ?>
-	<center><h1>You have mistake please fill all fields.</h1></center>	
-   <p align="center"><?php if (empty($_GET["name"])) { echo   "enter the name";} ?><br>
+	<center><h1>You have mistake please fill all fields.</h1></center>		 
+                  <p align="center"><?php if (empty($_GET["name"])) { echo   "enter the name";} ?><br>
                      <?php if (empty($_GET["password"])) { echo   "enter the password";} ?><br>
                      <?php if (empty($_GET["lname"])) { echo   "enter the Last Name";} ?><br>
                      <?php if (empty($_GET["nname"])) { echo   "enter the Nickname";} ?><br>
                      <?php if (empty($_GET["email"])) { echo   "enter the email";} ?><br>
 					 <?php if (empty($_GET["sex"])) { echo   "choose the sex";} ?><br>
-					 <?php if (empty($_GET["f1"])) { echo   "choose I accept Terms of Use of the ulD community";} ?></p>
+					 <?php if (empty($_GET["f1"])) { echo   "choose I accept Terms of Use of the ulD community";} ?></p>	 			 
    <?php }else { ?>
 	<center><h1>Thanks for the registration!</h1></center>
-		<p align="center"><?php echo $_GET["surname"]; ?>
-	                      <?php echo $_GET["name"]; ?><br>
-		                  <?php echo $_GET["password"]; ?><br>		
-		                  <?php echo $_GET["lname"]; ?><br>
-		                  <?php echo $_GET["nname"]; ?><br>		
-		                  <?php echo $_GET["email"]; ?></p>		
-   <?php } ?>
-
-  </table>
+	  <table border="1" style="margin:auto;" width="400px" bordercolor="#EEEEEE">			             
+	                 <tr><td align="center" ><?php echo "Name:".$_GET["name"]; ?></td></tr>
+		             <tr><td align="center" ><?php echo "Last Name:".$_GET["lname"]; ?></td></tr>		
+		             <tr><td align="center" ><?php echo "Password:".$_GET["password"]; ?></td></tr>
+		             <tr><td align="center" ><?php echo "Nickname:".$_GET["nname"]; ?></td></tr>		
+		             <tr><td align="center" ><?php echo "Email:".$_GET["email"]; ?></td></tr>
+                     <tr><td align="center" ><?php print_r ("Date of birth:".$_GET["day_b"].$_GET["month"].$_GET["year"]); ?></td></tr>
+      </table>					 
+   <?php } ?>    
   </form>
 <script type="text/javascript">
 
