@@ -27,7 +27,7 @@ if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empt
   <table border="1" style="margin:auto;">
    <tr>
     <td>Email</td>
-	<td><input name="email" type="text" size="33"/></td>
+	<td><input id="email" name="email" type="text" size="33"/></td>
    </tr>
     <tr>
      <td>Password</td>
@@ -117,6 +117,22 @@ if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empt
   </table>
   </form>
 <script type="text/javascript">
+
+$( document ).ready(function() { //when page is loaded.
+
+//#1 - vivesti soobschenie
+//alert('hello');
+
+
+// $('#email') - dostup k polu
+//#2 - vivesti znachenie polya
+//alert( $('#email').val() );
+
+//#3 
+
+
+});
+
 
 </script>
 
