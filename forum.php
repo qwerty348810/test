@@ -22,7 +22,7 @@ if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empt
 	}
 ?>
 <?php if ($screen==1) { ?>
- <form action="FORUM.php" method="get" >
+ <form action="forum.php" method="get" >
   <table border="1" style="margin:auto;">
    <tr>
     <td>Email</td>
