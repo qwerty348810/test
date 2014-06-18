@@ -15,37 +15,28 @@ $country=array("Belarus","Russia","Ukraine","Kazakhstan","Austria","Japan","Cana
  $screen=1;
 if (isset($_GET['submitted']) && $_GET['submitted']==1 ) {
  $screen=3; 
-if ( empty($_GET['name']) ) {
+if ( empty($_GET['name'])||empty($_GET['surname'])||empty($_GET['passport'])||empty($_GET['year'])||empty($_GET['region'])||empty($_GET['address'])||empty($_GET['locality'])||empty($_GET['postcode'])||empty($_GET['mobile'])||empty($_GET['e-mail'])||empty($_GET['f1']) ) {
  $screen=2;
 	}
 	}
 ?>
 <?php if ($screen==1) { ?>
+<form action="Oriflame3.php" method="get" >
 <table border="0" width="900px" style="margin:auto;">
-      <td><img src="http://orilider.com/images/logo_gray.png" style="margin-left: 350px;" /></img>
- <table border="0" >
-   <tr>
-    <td><h1>Registration Form</h1>
-	 <p>For registration Oriflame complete the form below.</p>
-	 <p>The confidentiality of personal data is guaranteed.</p>
-	 <p>All fields are required.</p>
-	 <form action="Oriflame.php" method="get" >
-	 <table border="0">
-	  <tr>
-	   <td>Family name</td>
-	   <td><input name="surname" type="text" size="33"/></td>
-	  </tr>
-	  <tr>
-	   <td>Name and First Name</td>
-	   <td><input name="name" type="text" size="33"/></td>
-	  </tr>
-	  <tr>
-	   <td>Passport</td>
-	   <td><input name="passport" type="text" size="33" placeholder="series and number"/></td>
-	  </tr>
-	  <tr>
-	   <td>Birthday</td>
-	   <td align="left"><select name="day_b">
+  <tr>
+  <td><img src="http://orilider.com/images/logo_gray.png" style="margin-left: 350px;"/></td>
+  </tr> 
+</table>
+     <table border="0" width="1200px" style="margin:auto;" cellpadding="6" >
+    <tr>
+     <td width="50%"><h1 align="right">Registration Form</h1>
+	 <p align="right">For registration Oriflame complete the form below.</p>
+	 <p align="right">The confidentiality of personal data is guaranteed.</p>
+	 <p align="right">All fields are required.</p>
+	 <p align="right">Family name<input name="surname" type="text" size="33"/><br>
+	 Name and First Name<input name="name" type="text" size="33"/><br>
+	 Passport<input name="passport" type="text" size="33" placeholder="series and number"/><br>
+	 Birthday<select name="day_b">
 	                    <?php                    
 						arsort($day_b);
 						foreach ($day_b as $k=>$v) {						
@@ -73,60 +64,32 @@ if ( empty($_GET['name']) ) {
 						echo '<option value="'.$k.'">'.$v.'</option>';}
 						?>
 						</select>																
-						<input name="year" type="text" placeholder="19XX" size="6" maxlength="4"/></td>				
-	  </tr>
-	  <tr>
-	   <td>Country</td>
-	   <td align="left"><select name="month" style="width:45%" >	  
+						<input name="year" type="text" placeholder="19XX" size="6" maxlength="4"/><br>
+						
+	 Country<select name="month" >	  
 	    <?php		
 		asort($country);
 		foreach ($country as $k=>$v) {
         echo '<option value="'.$k.'">'.$v.'</option>';}
         ?>
 	    </select>
-		<select name="country" style="width:45%" >
+		<select name="country" >
 	    <?php
 		arsort($country);
 		foreach ($country as $k=>$v) {
         echo '<option value="'.$k.'">'.$v.'</option>';}
         ?>
-	    </select>
-	   </td>	
-	  </tr>
-	  <tr>
-	   <td>Region</td>
-	   <td><input name="region" type="text" size="33"/></td>
-	  </tr>
-	  <tr>
-	   <td>Locality</td>
-	   <td><input name="locality" type="text" size="33" placeholder="name of the city or village"/></td>
-	  </tr>
-	  <tr>
-	   <td>Address</td>
-	   <td><input name="address" type="text" size="33" placeholder="street name, house, apartment"/></td>
-	  </tr>
-	  <tr>
-	   <td>Postcode</td>
-	   <td><input name="postcode" type="text" size="33"/></td>
-	  </tr>
-	  <tr>
-	   <td>Mobile phone</td>
-	   <td><input name="mobile phone" type="text" size="33" placeholder="in international format"/></td>
-	  </tr>
-	  <tr>
-	   <td>E-mail</td>
-	   <td><input name="e-mail" type="text" size="33"/></td>
-	  </tr>
-	  <tr>
-	   <td><input name="f1" type="checkbox"></td>
-	   <td>I accept the conditions of registration</td>
-	  </tr>
-	  <tr>
-	   <td><input name="f2" type="hidden" value="1"/><input type="submit" value="Sign in Oriflame"></td>
-	  </tr>
-	 </table>
-	 </td>
-	 <td><h1>Conditions Online Oriflame Registration :</h1>
+	    </select><br>
+    Region<input name="region" type="text" size="33"/><br>
+	Locality<input name="locality" type="text" size="33" placeholder="name of the city or village"/><br>
+	Address<input name="address" type="text" size="33" placeholder="street name, house, apartment"/><br>
+	Postcode<input name="postcode" type="text" size="33"/><br>
+	Mobile phone<input name="mobile" type="text" size="33" placeholder="in international format"/><br>
+	E-mail<input name="e-mail" type="text" size="33"/><br>
+	<input name="f1" type="checkbox">I accept the conditions of registration<br>
+	<input name="submitted" type="hidden" value="1"/><input type="submit" value="Sign in Oriflame"/></p>
+     </td>	 
+	  <td width="50%"><h1>Conditions Online Oriflame Registration :</h1>
 			<ul>
 				<li>within days after registration Oriflame , you e-mail a consultant your personal number and password with which you can order products through the online store at prices 18% lower than in the catalog. Also , check in Oriflame gives you the right to use the services of a network of medical laboratories Synevo Discount 30 % ;</li>
 				<li>no matter what purpose you decide to register in Oriflame , whether buying for yourself , or for a living , you have the right to participate in all promotions and incentive programs undertaken by the company . Come regularly in the section " consultants " and " News " to be aware of all the deals ;</li>
@@ -136,35 +99,33 @@ if ( empty($_GET['name']) ) {
 				<li> in Oriflame can register for foreign passport , but in this case you may not be able to buy products on credit ;</li>
 				<li> User commission orders via the Internet , as well as a list of ways to pay and receive your orders , you will receive on e-mail after registration .</li>
 			</ul>
-	</tr>
-	   </table>
-</table>
+		</td>	
+     </tr>
+	 </table>		
+	  </form>
 <hr heidth="20px" width="900px">
-</hr>
 <table style="margin-left: 790px;">
  <tr>
-  <td><p>COPYING PROHIBITED CONTENT ON THE SITE!</td>
+  <td><p>COPYING PROHIBITED CONTENT ON THE SITE!</p></td>
  </tr> 
 </table>
 <table style="margin-left: 750px;">
  <tr>
   <td>2003-2014 Community independent consultants Oriflame Cosmetics</td>
- </tr> 		  
-   <p><input type="hidden" name="submitted" value="1" /></p>	  
+ </tr> 		     	  
 <?php  } elseif ($screen==2) { ?>
 	<center><h1>You have mistake please fill all fields.</h1></center>	   	
 <?php }else { ?>
 	<center><h1>Thanks for the registration!</h1></center>
 		<p><?php echo $_GET["surname"]; ?>
-	    <p><?php echo $_GET['name']; ?>
+	    <p><?php echo $_GET["name"]; ?>
 		<p><?php echo $_GET["passport"]; ?>		
 		<p><?php echo $_GET["region"]; ?>
 		<p><?php echo $_GET["locality"]; ?>
 		<p><?php echo $_GET["postcode"]; ?>
-		<p><?php echo $_GET["mobile phone"]; ?>
+		<p><?php echo $_GET["mobile"]; ?>
 		<p><?php echo $_GET["e-mail"]; ?>		
 <?php } ?>
-</table>
-       </form>
+</table>       
  </body>
  </html>
