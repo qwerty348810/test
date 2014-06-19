@@ -4,6 +4,9 @@ $day_b=array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,2
 $month=array("January","February","March","April","May","June","July","August","September","October","November","December");
 $location=array("New York","Las Vegas","Washington");
 $year=array(2014,2013,2012,2011,2009,2008,2007,2006,1990);
+$key=$_GET["year"];
+$vey=$_GET["month"];
+$wey=$_GET["day_b"];
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="" dir="">
 <head>
@@ -114,7 +117,7 @@ if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empt
 		             <tr><td align="center" ><?php echo "Password:".$_GET["password"]; ?></td></tr>
 		             <tr><td align="center" ><?php echo "Nickname:".$_GET["nname"]; ?></td></tr>		
 		             <tr><td align="center" ><?php echo "Email:".$_GET["email"]; ?></td></tr>
-                     <tr><td align="center" ><?php print_r ("Date of birth:".$_GET["day_b"].$_GET["month"].$_GET["year"]); ?></td></tr>
+                     <tr><td align="center" ><?php echo "Date of birth:".$year["$key"].$month["$vey"].$day_b["$wey"]; ?></td></tr>
       </table>					 
    <?php } ?>    
   </form>
