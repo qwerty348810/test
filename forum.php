@@ -112,13 +112,114 @@ if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empt
    <?php }else { ?>
 	<center><h1>Thanks for the registration!</h1></center>
 	  <table border="1" style="margin:auto;" width="400px" bordercolor="#EEEEEE">			             
-	                 <tr><td align="center" ><?php echo "Name:".$_GET["name"]; ?></td></tr>
-		             <tr><td align="center" ><?php echo "Last Name:".$_GET["lname"]; ?></td></tr>		
-		             <tr><td align="center" ><?php echo "Password:".$_GET["password"]; ?></td></tr>
-		             <tr><td align="center" ><?php echo "Nickname:".$_GET["nname"]; ?></td></tr>		
-		             <tr><td align="center" ><?php echo "Email:".$_GET["email"]; ?></td></tr>
-                     <tr><td align="center" ><?php echo "Date of birth:".$year["$key"].$month["$vey"].$day_b["$wey"]; ?></td></tr>
-      </table>					 
+	                 <tr>
+					  <td align="center" >
+ <?php 
+ $File = "Name.txt"; 
+ $Handle = fopen($File, 'w');
+ 
+ $Data ="";
+ 
+  if (isset($_GET["name"]) )
+ { 
+ $Data =$_GET["name"] ; 
+ }
+ fwrite($Handle, $Data); 
+ fclose($Handle);
+ echo "Name:".$_GET["name"];
+ ?>
+                      </td>
+					 </tr>
+		             <tr>
+					  <td align="center" ><?php 
+ $File = "Last Name.txt"; 
+ $Handle = fopen($File, 'w');
+ 
+ $Data ="";
+ 
+  if (isset($_GET["lname"]) )
+ { 
+ $Data =$_GET["lname"] ; 
+ }
+ fwrite($Handle, $Data); 
+ fclose($Handle);
+ echo "Last Name:".$_GET["lname"];
+ ?>                   
+                      </td>
+                     </tr>		
+		             <tr>
+					  <td align="center" >
+<?php 
+ $File = "Password.txt"; 
+ $Handle = fopen($File, 'w');
+ 
+ $Data ="";
+ 
+  if (isset($_GET["password"]) )
+ { 
+ $Data =$_GET["password"] ; 
+ }
+ fwrite($Handle, $Data); 
+ fclose($Handle);
+ echo "Password:".$_GET["password"];
+ ?>                  
+                      </td>
+					 </tr>
+		             <tr>
+					  <td align="center" >
+<?php 
+ $File = "Nickname.txt"; 
+ $Handle = fopen($File, 'w');
+ 
+ $Data ="";
+ 
+  if (isset($_GET["nname"]) )
+ { 
+ $Data =$_GET["nname"] ; 
+ }
+ fwrite($Handle, $Data); 
+ fclose($Handle);
+ echo "Nickname:".$_GET["nname"];
+ ?> 
+                      </td>
+					 </tr>		
+		             <tr>
+					  <td align="center" >
+<?php 
+ $File = "Email.txt"; 
+ $Handle = fopen($File, 'w');
+ 
+ $Data ="";
+ 
+  if (isset($_GET["email"]) )
+ { 
+ $Data =$_GET["email"] ; 
+ }
+ fwrite($Handle, $Data); 
+ fclose($Handle);
+ echo "Email:".$_GET["email"];
+ ?> 
+                      </td>
+					 </tr>
+                     <tr>
+					 <td align="center" >
+<?php 
+ $File = "Date of birth.txt"; 
+ $Handle = fopen($File, 'w');
+ 
+ $Data ="";
+ 
+  if (isset($year["$key"]))
+ { 
+ $Data =$year["$key"].$month["$vey"].$day_b["$wey"]; 
+ }
+ fwrite($Handle, $Data); 
+ fclose($Handle);
+ echo "Date of birth:".$year["$key"].$month["$vey"].$day_b["$wey"];
+ ?>
+                      </td>
+					 </tr>
+      </table> 	  
    <?php } ?>    
   </form>
 <script type="text/javascript">
