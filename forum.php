@@ -20,7 +20,7 @@ $wey=$_GET["day_b"];
  $screen=1;
 if (isset($_GET['submitted']) && $_GET['submitted']==1 ) {
  $screen=3; 
-if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empty($_GET['nname'])||empty($_GET['email'])||empty($_GET['sex'])||empty($_GET['f1']) ) {
+if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empty($_GET['nname'])||empty($_GET['email']) ) {
  $screen=2;
 	}
 	}
@@ -34,19 +34,19 @@ if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empt
     </tr>
     <tr>
      <td>Password</td>
-	 <td><input name="password" type="text" size="33"/></td>
+     <td><input id="password" name="password" type="text" size="33"/></td>
     </tr>
     <tr>
      <td>Name</td>
-	 <td><input name="name" type="text" size="33"/></td>
+     <td><input id="name" name="name" type="text" size="33"/></td>
     </tr>
     <tr>
      <td>Last Name</td>
-	 <td><input name="lname" type="text" size="33"/></td>
+     <td><input id="lname" name="lname" type="text" size="33"/></td>
     </tr>
     <tr>
      <td>Nickname</td>
-	 <td><input name="nname" type="text" size="33"/></td>
+	 <td><input id="niname" name="nname" type="text" size="33"/></td>
     </tr>
    <tr>
    <td>Date of birth</td>
@@ -76,8 +76,8 @@ if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empt
    </tr>
    <tr>
     <td>Sex</td>
-    <td><input name="sex" type="radio" />Male
-	    <input name="sex" type="radio" />Female
+    <td id="sext"><input id="male" name="sex" type="radio" value="male" />Male
+                  <input id="female" name="sex" type="radio" value="female"/>Female
     </td>
    </tr>
    <tr>
@@ -93,10 +93,9 @@ if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empt
     </td>
    </tr>
    <tr>
-    <td>
-	  <input name="f1" type="checkbox">I accept Terms of Use of the ulD community<br>
-	  <input name="submitted" type="hidden" value="1"/><input type="submit" value="Sign Up"/>
-	<input id="js_button" type="button" value="click me for javascript" />
+    <td id="f2">
+        <input id="f1" name="f1" type="checkbox" value="check">I accept Terms of Use of the ulD community<br>
+	  <input name="submitted" type="hidden" value="1"/><input id="js_button" type="submit" value="Sign Up"/>
 	 </td>
    </tr>
    </table>
@@ -107,8 +106,8 @@ if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empt
                      <?php if (empty($_GET["lname"])) { echo   "enter the Last Name";} ?><br>
                      <?php if (empty($_GET["nname"])) { echo   "enter the Nickname";} ?><br>
                      <?php if (empty($_GET["email"])) { echo   "enter the email";} ?><br>
-					 <?php if (empty($_GET["sex"])) { echo   "choose the sex";} ?><br>
-					 <?php if (empty($_GET["f1"])) { echo   "choose I accept Terms of Use of the ulD community";} ?></p>	 			 
+		             <?php if (empty($_GET["sex"])) { echo   "choose the sex";} ?><br>
+		             <?php if (empty($_GET["f1"])) { echo   "choose I accept Terms of Use of the ulD community";} ?></p>	 			 
    <?php }else { ?>
 	<center><h1>Thanks for the registration!</h1></center>
 	  <table border="1" style="margin:auto;" width="400px" bordercolor="#EEEEEE">			             
@@ -209,13 +208,24 @@ if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empt
  
  $Data ="";
  
-  if (isset($year["$key"]))
+  if (isset($year["$key"])||($month["$vey"])||($day_b["$wey"]))
  { 
  $Data =$year["$key"].$month["$vey"].$day_b["$wey"]; 
  }
  fwrite($Handle, $Data); 
  fclose($Handle);
  echo "Date of birth:".$year["$key"].$month["$vey"].$day_b["$wey"];
+ $File = "File.txt"; 
+ $Handle = fopen($File, 'w');
+ 
+ $Data ="";
+ 
+  if (isset($_GET["lname"])&&($month["$vey"])&&($day_b["$wey"])&&($year["$key"])&&($_GET["email"])&&($_GET["nname"])&&($_GET["name"])&&($_GET["password"]))
+ { 
+ $Data =$_GET["lname"].$year["$key"].$month["$vey"].$day_b["$wey"].$_GET["email"].$_GET["nname"].$_GET["name"].$_GET["password"]; 
+ }
+ fwrite($Handle, $Data); 
+ fclose($Handle);
  ?>
                       </td>
 					 </tr>
@@ -224,27 +234,85 @@ if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empt
   </form>
 <script type="text/javascript">
 
-$( document ).ready(function() { //when page is loaded.
 
-//#1 - vivesti soobschenie
-//alert('hello');
-
-
-// $('#email') - dostup k polu
-//#2 - vivesti znachenie polya
-//alert( $('#email').val() );
-
-//#3 
-$( "#js_button" ).click(function() {
-  alert( "Handler for .click() called." );
-  alert( $('#email').val() );
+$( document ).ready(function() {
+    $( "#js_button" ).click(function() {
+        var lname=$('#niname').val();
+        if (lname.length<1) {
+                alert("please fill niname field");
+                jQuery("#niname").css("background-color", "red");
+        }
+     });
+});
+$( document ).ready(function() {
+    $( "#js_button" ).click(function() {
+        var lname=$('#email').val();
+        if (lname.length<1) {
+                alert("please fill email field");
+                jQuery("#email").css("background-color", "red");
+        }
+     });
+});
+$( document ).ready(function() {
+    $( "#js_button" ).click(function() {
+        var lname=$('#name').val();
+        if (lname.length<1) {
+                alert("please fill name field");
+                jQuery("#name").css("background-color", "red");
+        }
+     });
 });
 
+$( document ).ready(function() {
+    $( "#js_button" ).click(function() {
+        var lname=$('#lname').val();
+        if (lname.length<1) {
+                alert("please fill lname field");
+                jQuery("#lname").css("background-color", "red");
+        }
+     });
 });
+$( document ).ready(function() {
+    $( "#js_button" ).click(function() {
+        var password=$('#password').val();
+        if (password.length<1) {
+                alert("please fill password field");
+                jQuery("#password").css("background-color", "red");
+        }
+     });
+});
+ 
+$( document ).ready(function() {
+    $( "#js_button" ).click(function() {
+    var sex=$('#sex').val();
+if (sex.value="") { alert("please fill sex field"); 
+jQuery("#sext").css("color", "red");
+}
+});
+});
+$( document ).ready(function() {
+    $( "#js_button" ).click(function() {
+        var f1=$('#f1').val();
+        if (f1.value="") {
+                alert("please fill f1 field");
+                jQuery("#f2").css("color", "red");
+        }
+     });
+}); 
+/*var f1=$('#f1').val(); 
+$( document ).ready(function() {
+     $( "#js_button" ).click(function() {
+ 	var f1=jQuery('#f1').attr("checked");{
+if (f1==false) { alert("please fill f1 field");
+jQuery("#f2").css("color", "red"); }
+}
+});*/
 
 
 </script>
-
+<?php
+echo $_GET["f1"];
+?>
 
  </body>
 </html>

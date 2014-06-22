@@ -1,4 +1,0 @@
-Project X 
-==============
-Author: Dmitry
-
