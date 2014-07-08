@@ -18,13 +18,13 @@
             </div>
              <div align="center">
             <input name="submit" type="hidden" value="1"/>     
-            <input id="js_button" type="submit" name="enter" value="Enter"/><br />   
+ <input id="js_button" type="submit" name="enter" value="Enter"/><br />   
              </div>
 
         </form>
             <form action="forum.php" method="post" name="forma2">
                 <div align="center">
-            <input id="js_button2" type="submit" name="reg" value="Registration for the forum"/><br />   
+           <input id="js_button2" type="submit" name="reg" value="Registration for the forum"/><br />   
              </div>  
             </form>
             
