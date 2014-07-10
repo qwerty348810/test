@@ -14,10 +14,15 @@
 <?php
 mysql_connect("localhost", "root", "") or die (mysql_error ());
 mysql_select_db("test") or die(mysql_error());
-$strSQL = "INSERT INTO registr(";
-$strSQL = $strSQL . "email) ";
-$strSQL = $strSQL . "VALUES(";
-$strSQL = $strSQL . "'$link')";
+//$strSQL = "INSERT INTO registr(";
+//$strSQL = $strSQL . "email) ";
+//$strSQL = $strSQL . "VALUES(";
+//$strSQL = $strSQL . "'$link')";
+$strSql=" INSERT INTO registr 
+  (email,password,name,last_name,nickname,date_of_birth,sex,location) 
+   VALUES 
+  ('test@gmail.com',123,'test name', 'last name test', 'nickname test', 11,'sex?','Vitebsk' )";
+
 mysql_query($strSQL) or die (mysql_error());
 mysql_close();
 ?>
