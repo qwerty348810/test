@@ -12,7 +12,7 @@ $wey=$_GET["day_b"];
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta charset="utf-8">
-	<title>New page</title>
+	<title>Forum</title>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
  <body>
@@ -290,15 +290,7 @@ jQuery("#sext").css("color", "red");
 }
 });
 });
-$( document ).ready(function() {
-    $( "#js_button" ).click(function() {
-        var f1=$('#f1').val();
-        if (f1.value="") {
-                alert("please fill f1 field");
-                jQuery("#f2").css("color", "red");
-        }
-     });
-}); 
+
 /*var f1=$('#f1').val(); 
 $( document ).ready(function() {
      $( "#js_button" ).click(function() {
@@ -310,9 +302,5 @@ jQuery("#f2").css("color", "red"); }
 
 
 </script>
-<?php
-echo $_GET["f1"];
-?>
-
  </body>
 </html>
