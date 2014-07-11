@@ -230,7 +230,16 @@ if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empt
                       </td>
 					 </tr>
       </table> 	  
-   <?php } ?>    
+   <?php } ?> 
+<?php
+ mysql_connect("localhost", "root", "") or die (mysql_error ());
+ mysql_select_db("test") or die(mysql_error());
+$strSql=" INSERT INTO registr 
+  (email,password,name,last_name,nickname,date_of_birth) 
+   VALUES 
+  ('$_GET['email']','$_GET['password']','$_GET['name'])','$_GET['lname'])','$_GET['nname']','$_GET["year"].$_GET["month"].$_GET["day_b"]' )";
+  mysql_close();
+?>     
   </form>
 <script type="text/javascript">
 
@@ -299,6 +308,7 @@ if (f1==false) { alert("please fill f1 field");
 jQuery("#f2").css("color", "red"); }
 }
 });*/
+
 
 
 </script>
