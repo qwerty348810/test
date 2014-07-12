@@ -113,6 +113,20 @@ if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empt
 	  <table border="1" style="margin:auto;" width="400px" bordercolor="#EEEEEE">			             
 	                 <tr>
 					  <td align="center" >
+ <?php
+ mysql_connect("localhost", "root", "") or die (mysql_error ());
+ mysql_select_db("test") or die(mysql_error());
+  $strSql=' INSERT INTO registr 
+  (email,password,name,last_name,nickname) 
+   VALUES 
+  ("'.$email.'","'.$password.'","'.$name.'","'.$lname.'","'.$nname.'")';
+  
+ if ($strSql){
+     echo "SENCS!!!!";
+     echo "$strSql";
+ }
+mysql_close();
+?>                                                  
  <?php 
  $File = "Name.txt"; 
  $Handle = fopen($File, 'w');
@@ -231,15 +245,6 @@ if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empt
 					 </tr>
       </table> 	  
    <?php } ?> 
-<?php
- mysql_connect("localhost", "root", "") or die (mysql_error ());
- mysql_select_db("test") or die(mysql_error());
-$strSql=" INSERT INTO registr 
-  (email,password,name,last_name,nickname,date_of_birth) 
-   VALUES 
-  ('$_GET['email']','$_GET['password']','$_GET['name'])','$_GET['lname'])','$_GET['nname']','$_GET["year"].$_GET["month"].$_GET["day_b"]' )";
-  mysql_close();
-?>     
   </form>
 <script type="text/javascript">
 
