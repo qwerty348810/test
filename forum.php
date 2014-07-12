@@ -77,7 +77,7 @@ if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empt
    <tr>
     <td>Sex</td>
     <td id="sext"><input id="male" name="sex" type="radio" value="male" />Male
-                  <input id="female" name="sex" type="radio" value="female"/>Female
+                  <input id="female" name="sex" type="radio" value="female" />Female
     </td>
    </tr>
    <tr>
@@ -110,23 +110,35 @@ if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empt
 		             <?php if (empty($_GET["f1"])) { echo   "choose I accept Terms of Use of the ulD community";} ?></p>	 			 
    <?php }else { ?>
 	<center><h1>Thanks for the registration!</h1></center>
-	  <table border="1" style="margin:auto;" width="400px" bordercolor="#EEEEEE">			             
-	                 <tr>
-					  <td align="center" >
- <?php
+        <?php
+ $ky=$_GET["year"];
+ $vy=$_GET["month"];
+ $wy=$_GET["day_b"];
+ $kvw=$year["$ky"].$month["$vy"].$day_b["$wy"];
+ $email=$_GET["email"];
+ $password=$_GET["password"];
+ $name=$_GET["name"];
+ $lname=$_GET["lname"];
+ $nname=$_GET["nname"];
+ $sex=$_GET["sex"];
+ $loc=$_GET["location"];
  mysql_connect("localhost", "root", "") or die (mysql_error ());
  mysql_select_db("test") or die(mysql_error());
-  $strSql=' INSERT INTO registr 
-  (email,password,name,last_name,nickname) 
+  $strSql=' INSERT INTO regist 
+  (email,password,name,last_name,nickname,date_of_birth,sex,location) 
    VALUES 
-  ("'.$email.'","'.$password.'","'.$name.'","'.$lname.'","'.$nname.'")';
-  
+  ("'.$email.'", "'.$password.'", "'.$name.'", "'.$lname.'", "'.$nname.'", "'.$kvw.'", "'.$sex.'", "'.$location["$loc"].'")';
+ $result=mysql_query($strSql); 
  if ($strSql){
      echo "SENCS!!!!";
      echo "$strSql";
  }
 mysql_close();
-?>                                                  
+?>         
+	  <table border="1" style="margin:auto;" width="400px" bordercolor="#EEEEEE">			             
+	                 <tr>
+					  <td align="center" >
+                                          
  <?php 
  $File = "Name.txt"; 
  $Handle = fopen($File, 'w');
