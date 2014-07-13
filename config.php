@@ -1,4 +1,5 @@
 <?php
+$host='localhos';
 $table='regist';
 $connect=mysql_connect("localhos","root","");
 mysql_select_db("test") or die(mysql_error());
@@ -33,13 +34,3 @@ while($data = mysql_fetch_array($result)){
   echo '</table>';
     mysql_close();
 ?>
-
-
-email
-password
-name
-last_name
-nickname
-date_of_birth
-sex
-location
