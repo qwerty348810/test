@@ -114,7 +114,7 @@ if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empt
  $ky=$_GET["year"];
  $vy=$_GET["month"];
  $wy=$_GET["day_b"];
- $kvw=$year["$ky"].$month["$vy"].$day_b["$wy"];
+ $kvw=$day_b["$wy"].$month["$vy"].$year["$ky"];
  $email=$_GET["email"];
  $password=$_GET["password"];
  $name=$_GET["name"];
@@ -240,7 +240,7 @@ mysql_close();
  }
  fwrite($Handle, $Data); 
  fclose($Handle);
- echo "Date of birth:".$year["$key"].$month["$vey"].$day_b["$wey"];
+ echo "Date of birth:".$kvw;
  $File = "File.txt"; 
  $Handle = fopen($File, 'w');
  
