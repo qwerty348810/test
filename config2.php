@@ -8,9 +8,7 @@
     echo" No Connect to Base!!!";
  }
  else {
-     mysql_select_db("test",$connect);
-     echo "Connect to Base!!!";
-     
+     mysql_select_db("test",$connect);   
  }
  mysql_query("SET NAMES 'utf-8'");
         $result=mysql_query("SELECT * FROM regist");
