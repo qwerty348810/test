@@ -1,4 +1,4 @@
-﻿<?php 
+<?php 
 session_start();
 if(isset($_SESSION['views']))
 $_SESSION['views']=$_SESSION['views']+1;
@@ -6,6 +6,7 @@ else
 $_SESSION['views']=1;
 echo "Views=". $_SESSION['views'];
 ?>
+<!-- page header -->
 <!DOCTYPE html>
 <?php
 $day_b=array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31);
@@ -33,7 +34,7 @@ if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empt
 	}
 	}
 ?>
-<?php if ($screen==1) { ?>
+<?php if ($screen==1) { ?>    
  <form action="forum.php" method="get" >
   <table border="1" style="margin:auto;" bordercolor="#EEEEEE">
     <tr>
@@ -114,10 +115,16 @@ if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empt
                      <?php if (empty($_GET["lname"])) { echo   "enter the Last Name";} ?><br>
                      <?php if (empty($_GET["nname"])) { echo   "enter the Nickname";} ?><br>
                      <?php if (empty($_GET["email"])) { echo   "enter the email";} ?><br>
-		             <?php if (empty($_GET["sex"])) { echo   "choose the sex";} ?><br>
-		             <?php if (empty($_GET["f1"])) { echo   "choose I accept Terms of Use of the ulD community";} ?></p>	 			 
+		     <?php if (empty($_GET["sex"])) { echo   "choose the sex";} ?><br>
+		     <?php if (empty($_GET["f1"])) { echo   "choose I accept Terms of Use of the ulD community";} ?></p>
+            <form action="forum.php">
+                <div align="center">
+                 <button type="submit">button for rem</button>
+                </div>
+            </form>
+                     
    <?php }else { ?>
-	<center><h1>Thanks for the registration!</h1></center>
+	<center><h1>Thanks for the registration!</h1></center>        
         <?php
  $ky=$_GET["year"];
  $vy=$_GET["month"];
@@ -132,6 +139,14 @@ if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empt
  $loc=$_GET["location"];
  mysql_connect("localhost", "root", "") or die (mysql_error ());
  mysql_select_db("test") or die(mysql_error());
+  $query = "SELECT * FROM regist WHERE `email`='".$email."'";
+  $sql = mysql_query($query) or die(mysql_error());
+   if (mysql_num_rows($sql) > 0)
+    {
+      echo '<script type="text/javascript">alert("Mailbox is already Busy");</script>';
+      echo 'Email busy!';
+      echo '<script type="text/javascript">window.location = "forum.php";</script>';
+    }
   $strSql=' INSERT INTO regist 
   (email,password,name,last_name,nickname,date_of_birth,sex,location) 
    VALUES 
@@ -141,6 +156,7 @@ if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empt
      echo "SENCS!!!!";
      echo "$strSql";
  }
+
 mysql_close();
 ?>         
 	  <table border="1" style="margin:auto;" width="400px" bordercolor="#EEEEEE">			             
@@ -263,7 +279,12 @@ mysql_close();
  ?>
                       </td>
 					 </tr>
-      </table> 	  
+      </table>
+       <form action="RegInForum.php">
+          <div align="center">
+            <button type="submit">Button for rem</button>
+          </div>
+       </form>        
    <?php } ?> 
   </form>
 <script type="text/javascript">

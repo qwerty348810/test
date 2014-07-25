@@ -1,3 +1,11 @@
+  <html>   
+   <head>       
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+	<meta charset="utf-8">
+	<title>Forum</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   </head>
+    <body>   
     <?php
     $email = $_POST['email'];
     $password = $_POST['password'];
@@ -19,7 +27,7 @@
       if (count($query_result_data)) 
       	echo "Record (Email) found. <br/>";
       else 
-      	echo "email record not found.<br/>"
+      	echo "email record not found.<br/>";
       
       echo "=== -check password ==== <br/>";
       	
@@ -39,22 +47,16 @@
       	echo "password incorrect"; 
       
       /* Magic ends here*/
-      $row = mysql_fetch_array($result);
-      if($row){
-          echo "Login";
-          
-      }
-      else {
-          echo "Not login";                   
-      }
+     
       
-    $arr_main=array(); 
-    $temp_array=array();
-    $temp_array['password']=$row['password'];
-    $temp_array['email']=$row['email'];
-    $arr=array_push($temp_array,$arr_main);
-
-    echo $arr;
-    print_r($arr_main);  
+     
     mysql_close();
     ?>
+    <form action="RegInForum.php" method="post" name="forma2">
+     <div align="center">
+    Click to Home:<br />
+      <input id="js_button" type="submit" name="enter" value="Enter"/><br />
+     </div>
+   </form>  
+  </body> 
+ </html> 

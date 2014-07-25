@@ -30,7 +30,25 @@ $_GET['enter']=$enter;
     <input name="submit" type="hidden" value="1"/>     
     <input id="js_button" type="submit" name="enter" value="Âõîä"/><br />   
      </div>
-   
+   <?php
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    mysql_query("SET NAMES 'utf-8'");
+    mysql_connect("localhost", "root", "") or die (mysql_error ());
+    mysql_select_db("test") or die(mysql_error());
+    $sql = "SELECT * FROM regist WHERE `email`='".$email."'";
+    $result=mysql_query($sql);
+      
+      
+    $query_result_data=array();
+      while ($row = mysql_fetch_assoc($result)) {
+ 		/* adding to array row from table */
+      	$query_result_data[]=$row;
+      }
+      if (count($query_result_data)){
+          echo "Email busy";
+      }
+    ?>
 </form>
     <form action="forum.php" method="post" name="forma2">
         <div align="center">
