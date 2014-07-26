@@ -287,6 +287,14 @@ mysql_close();
        </form>        
    <?php } ?> 
   </form>
+ <?php
+ if ($_GET['action']==login){
+ $file_name=$_GET['action'];
+ include_once($file_name.".php");}
+ if ($_GET['action']==register){
+ $file_name2=$_GET['action'];
+ include_once($file_name2.".php");}
+ ?>
 <script type="text/javascript">
 
 $( document ).ready(function() {
