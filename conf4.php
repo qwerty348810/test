@@ -1,6 +1,5 @@
 <?php
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+    
     mysql_query("SET NAMES 'utf-8'");
     mysql_connect("localhost", "root", "") or die (mysql_error ());
     mysql_select_db("test") or die(mysql_error());

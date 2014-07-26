@@ -1,17 +1,12 @@
-<?php
- session_start();
- ?>
+
 <!DOCTYPE html>
-<?php
-$_GET['reg']=$reg;
-$_GET['enter']=$enter;
-?>
  <?php
- if ($_GET['action']==forum){
- $file_name=$_GET['action'];
+ $action=$_GET['action'];
+ if ($action==forum){
+ $file_name=$action;
  include_once($file_name.".php");}
- if ($_GET['action']==register){
- $file_name2=$_GET['action'];
+ if ($action==register){
+ $file_name2=$action;
  include_once($file_name2.".php");}
  ?>
 <html>   

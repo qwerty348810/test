@@ -1,8 +1,8 @@
 <?php
  $screen=1;
-if (isset($_GET['submitted']) && $_GET['submitted']==1 ) {
+if (isset($submit) && $submit==1 ) {
  $screen=3; 
-if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empty($_GET['nname'])||empty($_GET['email']) ) {
+if ( empty($name)||empty($_GET['lname'])||empty($password)||empty($_GET['nname'])||empty($email) ) {
  $screen=2;
 	}
 	}
@@ -83,13 +83,13 @@ if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empt
    </table>
    <?php  } elseif ($screen==2) { ?>
 	<center><h1>You have mistake please fill all fields.</h1></center>		 
-                  <p align="center"><?php if (empty($_GET["name"])) { echo   "enter the name";} ?><br>
-                     <?php if (empty($_GET["password"])) { echo   "enter the password";} ?><br>
-                     <?php if (empty($_GET["lname"])) { echo   "enter the Last Name";} ?><br>
-                     <?php if (empty($_GET["nname"])) { echo   "enter the Nickname";} ?><br>
-                     <?php if (empty($_GET["email"])) { echo   "enter the email";} ?><br>
-		     <?php if (empty($_GET["sex"])) { echo   "choose the sex";} ?><br>
-		     <?php if (empty($_GET["f1"])) { echo   "choose I accept Terms of Use of the ulD community";} ?></p>
+                  <p align="center"><?php if (empty($name)) { echo   "enter the name";} ?><br>
+                     <?php if (empty($password)) { echo   "enter the password";} ?><br>
+                     <?php if (empty($lname)) { echo   "enter the Last Name";} ?><br>
+                     <?php if (empty($nname)) { echo   "enter the Nickname";} ?><br>
+                     <?php if (empty($email)) { echo   "enter the email";} ?><br>
+		     <?php if (empty($sex)) { echo   "choose the sex";} ?><br>
+		     <?php if (empty($f1)) { echo   "choose I accept Terms of Use of the ulD community";} ?></p>
             <form action="forum.php">
                 <div align="center">
                  <button type="submit">button for rem</button>
@@ -99,17 +99,6 @@ if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empt
    <?php }else { ?>
 	<center><h1>Thanks for the registration!</h1></center>        
         <?php
- $ky=$_GET["year"];
- $vy=$_GET["month"];
- $wy=$_GET["day_b"];
- $kvw=$day_b["$wy"].$month["$vy"].$year["$ky"];
- $email=$_GET["email"];
- $password=$_GET["password"];
- $name=$_GET["name"];
- $lname=$_GET["lname"];
- $nname=$_GET["nname"];
- $sex=$_GET["sex"];
- $loc=$_GET["location"];
  mysql_connect("localhost", "root", "") or die (mysql_error ());
  mysql_select_db("test") or die(mysql_error());
   $query = "SELECT * FROM regist WHERE `email`='".$email."'";
@@ -123,7 +112,7 @@ if ( empty($_GET['name'])||empty($_GET['lname'])||empty($_GET['password'])||empt
   $strSql=' INSERT INTO regist 
   (email,password,name,last_name,nickname,date_of_birth,sex,location) 
    VALUES 
-  ("'.$email.'", "'.$password.'", "'.$name.'", "'.$lname.'", "'.$nname.'", "'.$kvw.'", "'.$sex.'", "'.$location["$loc"].'")';
+  ("'.$email.'", "'.$password.'", "'.$name.'", "'.$lname.'", "'.$nname.'", "'.$dmy.'", "'.$sex.'", "'.$location["$loc"].'")';
  $result=mysql_query($strSql); 
  if ($strSql){
      echo "SENCS!!!!";
@@ -142,13 +131,13 @@ mysql_close();
  
  $Data ="";
  
-  if (isset($_GET["name"]) )
+  if (isset($name) )
  { 
- $Data =$_GET["name"] ; 
+ $Data =$name ; 
  }
  fwrite($Handle, $Data); 
  fclose($Handle);
- echo "Name:".$_GET["name"];
+ echo "Name:".$name;
  ?>
                       </td>
 					 </tr>
@@ -159,13 +148,13 @@ mysql_close();
  
  $Data ="";
  
-  if (isset($_GET["lname"]) )
+  if (isset($lname) )
  { 
- $Data =$_GET["lname"] ; 
+ $Data =$lname ; 
  }
  fwrite($Handle, $Data); 
  fclose($Handle);
- echo "Last Name:".$_GET["lname"];
+ echo "Last Name:".$lname;
  ?>                   
                       </td>
                      </tr>		
@@ -177,13 +166,13 @@ mysql_close();
  
  $Data ="";
  
-  if (isset($_GET["password"]) )
+  if (isset($password) )
  { 
- $Data =$_GET["password"] ; 
+ $Data =$password ; 
  }
  fwrite($Handle, $Data); 
  fclose($Handle);
- echo "Password:".$_GET["password"];
+ echo "Password:".$password;
  ?>                  
                       </td>
 					 </tr>
@@ -195,13 +184,13 @@ mysql_close();
  
  $Data ="";
  
-  if (isset($_GET["nname"]) )
+  if (isset($nname) )
  { 
- $Data =$_GET["nname"] ; 
+ $Data =$nname ; 
  }
  fwrite($Handle, $Data); 
  fclose($Handle);
- echo "Nickname:".$_GET["nname"];
+ echo "Nickname:".$nname;
  ?> 
                       </td>
 					 </tr>		
@@ -213,13 +202,13 @@ mysql_close();
  
  $Data ="";
  
-  if (isset($_GET["email"]) )
+  if (isset($email) )
  { 
- $Data =$_GET["email"] ; 
+ $Data =$email ; 
  }
  fwrite($Handle, $Data); 
  fclose($Handle);
- echo "Email:".$_GET["email"];
+ echo "Email:".$email;
  ?> 
                       </td>
 					 </tr>
@@ -231,21 +220,21 @@ mysql_close();
  
  $Data ="";
  
-  if (isset($year["$key"])||($month["$vey"])||($day_b["$wey"]))
+  if (isset($year["$yearf"])||($month["$monthf"])||($day_b["$wey"]))
  { 
- $Data =$year["$key"].$month["$vey"].$day_b["$wey"]; 
+ $Data =$year["$yearf"].$month["$monthf"].$day_b["$dayf"]; 
  }
  fwrite($Handle, $Data); 
  fclose($Handle);
- echo "Date of birth:".$kvw;
+ echo "Date of birth:".$dmy;
  $File = "File.txt"; 
  $Handle = fopen($File, 'w');
  
  $Data ="";
  
-  if (isset($_GET["lname"])&&($month["$vey"])&&($day_b["$wey"])&&($year["$key"])&&($_GET["email"])&&($_GET["nname"])&&($_GET["name"])&&($_GET["password"]))
+  if (isset($lname)&&($month["$monthf"])&&($day_b["$dayf"])&&($year["$yearf"])&&($email)&&($nname)&&($name)&&($password))
  { 
- $Data =$_GET["lname"].$year["$key"].$month["$vey"].$day_b["$wey"].$_GET["email"].$_GET["nname"].$_GET["name"].$_GET["password"]; 
+ $Data =$lname.$year["$yearf"].$month["$monthf"].$day_b["$dayf"].$email.$nname.$name.$password; 
  }
  fwrite($Handle, $Data); 
  fclose($Handle);
@@ -261,11 +250,11 @@ mysql_close();
    <?php } ?> 
   </form>
  <?php
- if ($_GET['action']==login){
- $file_name=$_GET['action'];
+ if ($action==login){
+ $file_name=$action;
  include_once($file_name.".php");}
- if ($_GET['action']==register){
- $file_name2=$_GET['action'];
+ if ($action==register){
+ $file_name2=$action;
  include_once($file_name2.".php");}
  ?>
 <script type="text/javascript">
