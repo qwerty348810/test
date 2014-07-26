@@ -169,3 +169,73 @@ mysql_close();
  $file_name2=$_GET['action'];
  include_once($file_name2.".php");}
  ?>
+     <script type="text/javascript">
+
+$( document ).ready(function() {
+    $( "#js_button" ).click(function() {
+        var lname=$('#niname').val();
+        if (lname.length<1) {
+                alert("please fill niname field");
+                jQuery("#niname").css("background-color", "red");
+        }
+     });
+});
+$( document ).ready(function() {
+    $( "#js_button" ).click(function() {
+        var lname=$('#email').val();
+        if (lname.length<1) {
+                alert("please fill email field");
+                jQuery("#email").css("background-color", "red");
+        }
+     });
+});
+$( document ).ready(function() {
+    $( "#js_button" ).click(function() {
+        var lname=$('#name').val();
+        if (lname.length<1) {
+                alert("please fill name field");
+                jQuery("#name").css("background-color", "red");
+        }
+     });
+});
+
+$( document ).ready(function() {
+    $( "#js_button" ).click(function() {
+        var lname=$('#lname').val();
+        if (lname.length<1) {
+                alert("please fill lname field");
+                jQuery("#lname").css("background-color", "red");
+        }
+     });
+});
+$( document ).ready(function() {
+    $( "#js_button" ).click(function() {
+        var password=$('#password').val();
+        if (password.length<1) {
+                alert("please fill password field");
+                jQuery("#password").css("background-color", "red");
+        }
+     });
+});
+ 
+$( document ).ready(function() {
+    $( "#js_button" ).click(function() {
+    var sex=$('#sex').val();
+if (sex.value="") { alert("please fill sex field"); 
+jQuery("#sext").css("color", "red");
+}
+});
+});
+
+/*var f1=$('#f1').val(); 
+$( document ).ready(function() {
+     $( "#js_button" ).click(function() {
+ 	var f1=jQuery('#f1').attr("checked");{
+if (f1==false) { alert("please fill f1 field");
+jQuery("#f2").css("color", "red"); }
+}
+});*/
+
+
+
+</script>

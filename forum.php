@@ -13,9 +13,9 @@ $day_b=array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,2
 $month=array("January","February","March","April","May","June","July","August","September","October","November","December");
 $location=array("New York","Las Vegas","Washington");
 $year=array(2014,2013,2012,2011,2009,2008,2007,2006,1990);
-$key=$_GET["year"];
-$vey=$_GET["month"];
-$wey=$_GET["day_b"];
+if (isset($_GET["year"]) ) $key=$_GET["year"];
+if (isset($_GET["month"])) $vey=$_GET["month"];
+if (isset($_GET["day_b"])) $wey=$_GET["day_b"];
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="" dir="">
 <head>
@@ -25,9 +25,7 @@ $wey=$_GET["day_b"];
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
  <body>
- <?php
-include_once 'conf.php';
- ?>    
+     <?php include_once 'conf.php';?>    
  <form action="forum.php" method="get" >
   <table border="1" style="margin:auto;" bordercolor="#EEEEEE">
     <tr>
@@ -85,83 +83,14 @@ include_once 'conf.php';
 	 </td>
    </tr>
    </table>
-   <?php include_once 'conf2.php'; ?>
+<?php include_once 'conf2.php'; ?>
             <form action="forum.php">
                 <div align="center">
                  <button type="submit">button for rem</button>
                 </div>
             </form>
                      
- <?php include_once 'conf3.php';?>
-     <script type="text/javascript">
+<?php include_once 'conf3.php';?>
 
-$( document ).ready(function() {
-    $( "#js_button" ).click(function() {
-        var lname=$('#niname').val();
-        if (lname.length<1) {
-                alert("please fill niname field");
-                jQuery("#niname").css("background-color", "red");
-        }
-     });
-});
-$( document ).ready(function() {
-    $( "#js_button" ).click(function() {
-        var lname=$('#email').val();
-        if (lname.length<1) {
-                alert("please fill email field");
-                jQuery("#email").css("background-color", "red");
-        }
-     });
-});
-$( document ).ready(function() {
-    $( "#js_button" ).click(function() {
-        var lname=$('#name').val();
-        if (lname.length<1) {
-                alert("please fill name field");
-                jQuery("#name").css("background-color", "red");
-        }
-     });
-});
-
-$( document ).ready(function() {
-    $( "#js_button" ).click(function() {
-        var lname=$('#lname').val();
-        if (lname.length<1) {
-                alert("please fill lname field");
-                jQuery("#lname").css("background-color", "red");
-        }
-     });
-});
-$( document ).ready(function() {
-    $( "#js_button" ).click(function() {
-        var password=$('#password').val();
-        if (password.length<1) {
-                alert("please fill password field");
-                jQuery("#password").css("background-color", "red");
-        }
-     });
-});
- 
-$( document ).ready(function() {
-    $( "#js_button" ).click(function() {
-    var sex=$('#sex').val();
-if (sex.value="") { alert("please fill sex field"); 
-jQuery("#sext").css("color", "red");
-}
-});
-});
-
-/*var f1=$('#f1').val(); 
-$( document ).ready(function() {
-     $( "#js_button" ).click(function() {
- 	var f1=jQuery('#f1').attr("checked");{
-if (f1==false) { alert("please fill f1 field");
-jQuery("#f2").css("color", "red"); }
-}
-});*/
-
-
-
-</script>
  </body>
 </html>
