@@ -2,13 +2,13 @@
  $screen=1;
 if (isset($submit) && $submit==1 ) {
  $screen=3; 
-if ( empty($name)||empty($_GET['lname'])||empty($password)||empty($_GET['nname'])||empty($email) ) {
+if ( empty($name)||empty($lname)||empty($password)||empty($nname)||empty($email) ) {
  $screen=2;
 	}
 	}
 ?>
 <?php if ($screen==1) { ?>    
- <form action="forum.php" method="get" >
+ <form action="loginpost.php" method="get" >
   <table border="1" style="margin:auto;" bordercolor="#EEEEEE">
     <tr>
      <td>Email</td>

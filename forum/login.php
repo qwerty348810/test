@@ -20,7 +20,7 @@
 
 
 
-<form action="register.php" method="post" name="forma">
+<form action="loginpost.php" method="post" name="forma">
     <h1 align="center"> ¬ход на форум </h1>
      <div align="center">
     ¬ведите Email:<br />
