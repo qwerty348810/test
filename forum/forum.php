@@ -27,7 +27,7 @@ $year=array(2014,2013,2012,2011,2009,2008,2007,2006,1990);
  $nname=$_GET["nname"];
  $sex=$_GET["sex"];
  $loc=$_GET["location"];
- $action=$_GET['action'];
+ $action=$_GET["action"];
  $f1=$_GET["f1"];
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="" dir="">
