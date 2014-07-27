@@ -27,7 +27,7 @@ mysql_select_db("test") or die(mysql_error());
   mysql_close();
 ?>     
  </form>
-  <h1> Way to go</h1>   
+  <h1> Way to go in</h1>   
   
   
 
