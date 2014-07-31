@@ -1,7 +1,5 @@
   <html>
- <?php
- include_once 'conf4.php';
- ?> 
+ 
    <head>       
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 	<meta charset="utf-8">
@@ -14,6 +12,9 @@
        Click to Home:<br />
       <input id="js_button" type="submit" name="enter" value="Enter"/><br />
      </div>
+ <?php
+ include_once 'conf4.php';
+ ?> 
    </form>  
   </body> 
  </html> 

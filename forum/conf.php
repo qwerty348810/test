@@ -4,7 +4,7 @@ $_SESSION['views']=$_SESSION['views']+1;
 }
 else {
 $_SESSION['views']=1;
-echo "Views=". $_SESSION['views'];
+
 }
  $action=$_GET['action'];
 
@@ -221,21 +221,10 @@ mysql_close();
                       </td>
 					 </tr>
       </table>
-       <form action="forum.php">
-          <div align="center">
-            <button type="submit">Button for rem</button>
-          </div>
-       </form>        
+             
    <?php } ?> 
   </form>
- <?php
- if ($action==login){
- $file_name=$action;
- include_once($file_name.".php");}
- if ($action==register){
- $file_name2=$action;
- include_once($file_name2.".php");}
- ?>
+ 
 <script type="text/javascript">
 
 $( document ).ready(function() {
