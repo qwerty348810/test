@@ -8,7 +8,7 @@ if ( empty($name)||empty($lname)||empty($password)||empty($nname)||empty($email)
 	}
 ?>
 <?php if ($screen==1) { ?>    
- <form action="loginpost.php" method="get" >
+ <form action="forum.php" method="get" >
   <table border="1" style="margin:auto;" bordercolor="#EEEEEE">
     <tr>
      <td>Email</td>

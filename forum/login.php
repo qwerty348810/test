@@ -1,14 +1,17 @@
 
 <!DOCTYPE html>
  <?php
- $action=$_GET['action'];
- if ($action==forum){
- $file_name=$action;
- include_once($file_name.".php");}
- if ($action==register){
- $file_name2=$action;
- include_once($file_name2.".php");}
- ?>
+if (isset($_GET['login'])){ 
+    $action=$_GET['login'];}
+    else{
+    include_once 'login.php';
+    };
+if (isset($_GET['register'])){ 
+    $action=$_GET['register'];}
+    else{
+    include_once 'register.php';
+    };
+?>
 <html>   
 <head>       
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
