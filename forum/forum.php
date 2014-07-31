@@ -21,11 +21,16 @@ $_SESSION['views']=1;
  <body>
  <?php
  $action=$_GET['action'];
- if (isset($action)&&file_exists($action)){
+ if (isset($action) && file_exists($action.".php")){
  include_once($action.".php");}
- else{
-    include_once'forum.php'; 
+ elseif(isset($action) && !file_exists($action.".php")){
+    echo "fiale not exist";
+    die();
  }
+ else {
+     include_once'login.php';}
+     
+ 
  ?>
  <?php  include_once 'conf.php'; ?>
  </body>
