@@ -1,14 +1,5 @@
   <html>
  <?php
- $email = $_POST['email'];
- $password = $_POST['password']; 
- $action=$_GET['action'];
- if ($action==forum){
- $file_name=$action;
- include_once($file_name.".php");}
- if ($action==login){
- $file_name2=$action;
- include_once($file_name2.".php");}
  include_once 'conf4.php';
  ?> 
    <head>       

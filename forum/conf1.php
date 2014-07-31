@@ -1,11 +1,4 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="" dir="">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
-	<meta charset="utf-8">
-	<title></title>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-</head>
-<body>
+
 <form action="forum.php" method="get" >
   <table border="1" style="margin:auto;" bordercolor="#EEEEEE">
     <tr>
@@ -59,5 +52,8 @@
 	 </td>
    </tr>
    </table>
-    </body>
-    </html>
+        <form action="forum.php">
+          <div align="center">
+            <button type="submit">Button for rem</button>
+          </div>
+        </form>  
