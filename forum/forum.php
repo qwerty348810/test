@@ -5,17 +5,9 @@ $_SESSION['views']=$_SESSION['views']+1;
 }
 else {
 $_SESSION['views']=1;
-echo "Views=". $_SESSION['views'];
 }
 ?>
-<?php
- $action=$_GET['action'];
- if (isset($action)==login){
- include_once($action.".php");}
- else{
-    include_once(forum.php); 
- }
- ?>
+
 <!-- page header -->
 <!DOCTYPE html>
 
@@ -27,6 +19,14 @@ echo "Views=". $_SESSION['views'];
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
  <body>
+ <?php
+ $action=$_GET['action'];
+ if (isset($action)&&file_exists($action)){
+ include_once($action.".php");}
+ else{
+    include_once'forum.php'; 
+ }
+ ?>
  <?php  include_once 'conf.php'; ?>
  </body>
 </html>
