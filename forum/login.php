@@ -1,17 +1,5 @@
 
 <!DOCTYPE html>
- <?php
-if (isset($_GET['login'])){ 
-    $action=$_GET['login'];}
-    else{
-    include_once 'login.php';
-    };
-if (isset($_GET['register'])){ 
-    $action=$_GET['register'];}
-    else{
-    include_once 'register.php';
-    };
-?>
 <html>   
 <head>       
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >

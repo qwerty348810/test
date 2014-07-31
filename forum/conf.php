@@ -1,4 +1,13 @@
 <?php
+if(isset($_SESSION['views'])){
+$_SESSION['views']=$_SESSION['views']+1;
+}
+else {
+$_SESSION['views']=1;
+echo "Views=". $_SESSION['views'];
+}
+ $action=$_GET['action'];
+
 $day_b=array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31);
 $month=array("January","February","March","April","May","June","July","August","September","October","November","December");
 $location=array("New York","Las Vegas","Washington");
@@ -28,96 +37,46 @@ if ( empty($name)||empty($lname)||empty($password)||empty($nname)||empty($email)
 	}
 ?>
 <?php if ($screen==1) { ?>    
- <form action="forum.php" method="get" >
-  <table border="1" style="margin:auto;" bordercolor="#EEEEEE">
-    <tr>
-     <td>Email</td>
-	 <td><input id="email" name="email" type="text" size="33"/></td>
-    </tr>
-    <tr>
-     <td>Password</td>
-     <td><input id="password" name="password" type="text" size="33"/></td>
-    </tr>
-    <tr>
-     <td>Name</td>
-     <td><input id="name" name="name" type="text" size="33"/></td>
-    </tr>
-    <tr>
-     <td>Last Name</td>
-     <td><input id="lname" name="lname" type="text" size="33"/></td>
-    </tr>
-    <tr>
-     <td>Nickname</td>
-	 <td><input id="niname" name="nname" type="text" size="33"/></td>
-    </tr>
-   <tr>
-   <td>Date of birth</td>
-    <td>
-     <select name="day_b">
+
 	    <?php                    
 		asort($day_b);
 		foreach ($day_b as $k=>$v) {						
 		echo '<option value="'.$k.'">'.$v.'</option>';}
 		?>
-     </select>  
-     <select name="month">
+     
 	    <?php                    
 		asort($month);
 		foreach ($month as $k=>$v) {						
-	    echo '<option value="'.$k.'">'.$v.'</option>';}
+	        echo '<option value="'.$k.'">'.$v.'</option>';}
 		?>
-     </select>
-     <select name="year">
+    
 	   <?php                    
-	   asort($year);
-	   foreach ($year as $k=>$v) {						
-	   echo '<option value="'.$k.'">'.$v.'</option>';}
+	       asort($year);
+	       foreach ($year as $k=>$v) {						
+	       echo '<option value="'.$k.'">'.$v.'</option>';}
 	   ?>
-     </select>
-    </td>
-   </tr>
-   <tr>
-    <td>Sex</td>
-    <td id="sext"><input id="male" name="sex" type="radio" value="male" />Male
-                  <input id="female" name="sex" type="radio" value="female" />Female
-    </td>
-   </tr>
-   <tr>
-    <td>Location</td>
-    <td>
-	 <select name="location">
+     
 	    <?php                    
-	    asort($location);
-	    foreach ($location as $k=>$v) {						
-	    echo '<option value="'.$k.'">'.$v.'</option>';}
+	        asort($location);
+	        foreach ($location as $k=>$v) {						
+	        echo '<option value="'.$k.'">'.$v.'</option>';}
 	    ?>
-     </select>
-    </td>
-   </tr>
-   <tr>
-    <td id="f2">
-        <input id="f1" name="f1" type="checkbox" value="check">I accept Terms of Use of the ulD community<br>
-	  <input name="submitted" type="hidden" value="1"/><input id="js_button" type="submit" value="Sign Up"/>
-	 </td>
-   </tr>
-   </table>
+     
    <?php  } elseif ($screen==2) { ?>
-	<center><h1>You have mistake please fill all fields.</h1></center>		 
-                  <p align="center"><?php if (empty($name)) { echo   "enter the name";} ?><br>
+   <?php include_once 'conf2.php'; ?>
+	<?php if (empty($name)) { echo   "enter the name";} ?><br>
                      <?php if (empty($password)) { echo   "enter the password";} ?><br>
                      <?php if (empty($lname)) { echo   "enter the Last Name";} ?><br>
                      <?php if (empty($nname)) { echo   "enter the Nickname";} ?><br>
                      <?php if (empty($email)) { echo   "enter the email";} ?><br>
 		     <?php if (empty($sex)) { echo   "choose the sex";} ?><br>
-		     <?php if (empty($f1)) { echo   "choose I accept Terms of Use of the ulD community";} ?></p>
-            <form action="forum.php">
-                <div align="center">
-                 <button type="submit">button for rem</button>
-                </div>
-            </form>
+		     <?php if (empty($f1)) { echo   "choose I accept Terms of Use of the ulD community";} ?>
+            
                      
    <?php }else { ?>
-	<center><h1>Thanks for the registration!</h1></center>        
+    <?php include_once 'conf.php'; ?>
+	 
+       
         <?php
  mysql_connect("localhost", "root", "") or die (mysql_error ());
  mysql_select_db("test") or die(mysql_error());
@@ -262,7 +221,7 @@ mysql_close();
                       </td>
 					 </tr>
       </table>
-       <form action="RegInForum.php">
+       <form action="forum.php">
           <div align="center">
             <button type="submit">Button for rem</button>
           </div>
