@@ -17,4 +17,14 @@ $sex=( isset($_GET['sex']) ? $_GET['sex'] : '' );
 $loc=( isset($_GET['location']) ? $_GET['location'] : '' );
 $action=( isset($_GET['action']) ? $_GET['action'] : '' );
 $f1=( isset($_GET['f1']) ? $_GET['f1'] : '' );
+
+
+$db_host='localhost';
+$db_username='root';
+$db_password='';
+
+
+$db_name='test';
+
+
 ?>

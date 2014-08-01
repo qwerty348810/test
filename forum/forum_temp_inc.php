@@ -5,8 +5,8 @@
      echo '<option value="'.$k.'">'.$v.'</option>';}
 ?>
 <?php           
-    mysql_connect("localhost", "root", "") or die (mysql_error ());
-    mysql_select_db("test") or die(mysql_error());
+    mysql_connect($db_host, $db_username, $db_password) or die (mysql_error ());
+    mysql_select_db($db_name) or die(mysql_error());
         $query = "SELECT * FROM regist WHERE `email`='".$email."'";
         $sql = mysql_query($query) or die(mysql_error());
             if (mysql_num_rows($sql) < 0) {
