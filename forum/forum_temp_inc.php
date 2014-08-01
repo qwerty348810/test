@@ -1,9 +1,5 @@
  
-<?php                    
-     asort($day_b);
-     foreach ($day_b as $k=>$v) {						
-     echo '<option value="'.$k.'">'.$v.'</option>';}
-?>
+ 
 <?php           
     mysql_connect($db_host, $db_username, $db_password) or die (mysql_error ());
     mysql_select_db($db_name) or die(mysql_error());

@@ -1,7 +1,7 @@
 <?php //include_once 'forum_temp_inc.php'; ?>
 <form action="login.phtml" method="get" >
     <table border="1" style="margin:auto;" bordercolor="#EEEEEE">
-        <tr>
+		<tr>
             <td>Email</td>
             <td><input id="email" name="email" type="email" size="33"/></td>
         </tr>
@@ -24,7 +24,12 @@
         <tr>
             <td>Date of birth</td>
             <td>
-                <select name="day_b">                           
+                <select name="day_b">  
+                <?php asort($day_b); ?>
+                <?php  foreach ($day_b as $k=>$v): ?>
+                	<option value="<?php echo $k; ?>"><?php echo $v; ?></option>
+                 <?php endforeach; ?>
+                
                 </select>  
                 <select name="month">
                        <?php                    
