@@ -58,10 +58,10 @@ if (isset($_GET['action']) && file_exists($_GET['action'].".php")) {
 	$action=$_GET['action'];	 
 	include_once $action.'.php';
 }else {
-	
+	include_once 'login.phtml';
 }
 ?>
  
-<?php include_once 'login.phtml'; ?>
+ 
  </body>
 </html>
