@@ -8,10 +8,10 @@
     </head>
         <body>       
             <form action="login.php" method="post" name="forma2">
-            <div align="center">
-            Click to Home:<br />
-            <input id="js_button" type="submit" name="enter" value="Enter"/><br />
-            </div>
+                <div align="center">
+                    Click to Home:<br />
+                <input id="js_button" type="submit" name="enter" value="Enter"/><br />
+                </div>
 <?php
 include_once 'conf4.php';
 ?> 
