@@ -24,7 +24,9 @@ echo "Views=". $_SESSION['views'];
     <body>         
 <?php 
 $action='';
- 
+
+include_once 'variables.php';
+
 if (isset($_GET['action']) && file_exists($_GET['action'].".php")) {
 	$action=$_GET['action'];	 
 	include_once $action.'.php';
