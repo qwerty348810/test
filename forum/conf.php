@@ -4,7 +4,6 @@ $_SESSION['views']=$_SESSION['views']+1;
 }
 else {
 $_SESSION['views']=1;
-
 }
  $action=$_GET['action'];
 
