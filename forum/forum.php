@@ -51,6 +51,16 @@ if ( empty($name)||empty($lname)||empty($password)||empty($nname)||empty($email)
 }
 }
 ?>
+<?php 
+$action='';
+ 
+if (isset($_GET['action']) && file_exists($_GET['action'].".php")) {
+	$action=$_GET['action'];	 
+	include_once $action.'.php';
+}else {
+	
+}
+?>
  
 <?php include_once 'login.phtml'; ?>
  </body>
