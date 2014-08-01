@@ -78,9 +78,8 @@
             mysql_connect("localhost", "root", "") or die (mysql_error ());
             mysql_select_db("test") or die(mysql_error());   
              $strSql=' INSERT INTO regist 
-             (email,password,name,last_name,nickname,date_of_birth,sex,location) 
-              VALUES 
-             ("'.$email.'", "'.$password.'", "'.$name.'", "'.$lname.'", "'.$nname.'", "'.$dmy.'", "'.$sex.'", "'.$location["$loc"].'")';
+             (email,password,name,last_name,nickname,date_of_birth,sex,location)   VALUES 
+             ("'.$email.'", "'.$password.'", "'.$name.'", "'.$lname.'", "'.$nname.'", "'.$dmy.'", "'.$sex.'", "'.$location[$loc].'")';
             $result=mysql_query($strSql); 
             if ($strSql){
                 echo "SENCS!!!!";
