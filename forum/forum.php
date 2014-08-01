@@ -52,6 +52,6 @@ if ( empty($name)||empty($lname)||empty($password)||empty($nname)||empty($email)
 }
 ?>
  
-
+<?php include_once 'login.phtml'; ?>
  </body>
 </html>
