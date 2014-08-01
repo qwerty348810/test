@@ -1,4 +1,4 @@
-<?php include_once 'forum_temp_inc.php'; ?>
+<?php //include_once 'forum_temp_inc.php'; ?>
 <form action="login.phtml" method="get" >
     <table border="1" style="margin:auto;" bordercolor="#EEEEEE">
         <tr>
