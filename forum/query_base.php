@@ -1,8 +1,6 @@
-<?php
-    
-    mysql_query("SET NAMES 'utf-8'");
-    mysql_connect("localhost", "root", "") or die (mysql_error ());
-    mysql_select_db("test") or die(mysql_error());
+<?php   
+    mysql_connect($db_host, $db_username, $db_password) or die (mysql_error ());
+    mysql_select_db($db_name) or die(mysql_error());
         $sql = "SELECT * FROM regist WHERE `password`='".$password."' AND `email`='".$email."'";
         $result=mysql_query($sql);      
       /* Magic goes here */
@@ -21,7 +19,7 @@
             foreach ($query_result_data as $column_title=>$column_value) {
             echo $column_title.'='.$column_value."<br/>";
       	if ($column_title=='password'&& $column_value==$password)
-      		echo "password correct <br/>";
+            echo "password correct <br/>";
         }      
       /* esli tolko 1 element massiva to budem ispozvat ego bez foreach*/
         if (count($query_result_data)==1)

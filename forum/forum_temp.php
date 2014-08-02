@@ -26,25 +26,22 @@
             <td>Date of birth</td>
             <td>
                 <select name="day_b">  
-                <?php asort($day_b);?>
-                <?php  foreach ($day_b as $k=>$v): ?>
-                	<option value="<?php echo $k; ?>"><?php echo $v; ?></option>
-                 <?php endforeach; ?>
-                
+                    <?php asort($day_b);?>
+                    <?php  foreach ($day_b as $k=>$v): ?>
+                    <option value="<?php echo $k; ?>"><?php echo $v; ?></option>
+                    <?php endforeach; ?>                
                 </select>  
                 <select name="month">
-                       <?php                    
-                           asort($month);
-                           foreach ($month as $k=>$v) {						
-                            echo '<option value="'.$k.'">'.$v.'</option>';}
-                           ?>
+                    <?php asort($month);?>
+                    <?php  foreach ($month as $k=>$v): ?>
+                    <option value="<?php echo $k; ?>"><?php echo $v; ?></option>
+                    <?php endforeach; ?>                       
                 </select>
                 <select name="year">
-                      <?php                    
-                      asort($year);
-                      foreach ($year as $k=>$v) {						
-                      echo '<option value="'.$k.'">'.$v.'</option>';}
-                      ?>
+                    <?php asort($year);?>
+                    <?php  foreach ($year as $k=>$v): ?>
+                    <option value="<?php echo $k; ?>"><?php echo $v; ?></option>
+                    <?php endforeach; ?>                      
                 </select>
             </td>
         </tr>
@@ -58,11 +55,10 @@
             <td>Location</td>
             <td>
                 <select name="location">
-                       <?php                    
-                       asort($location);
-                       foreach ($location as $k=>$v) {						
-                       echo '<option value="'.$k.'">'.$v.'</option>';}
-                       ?>
+                    <?php asort($location);?>
+                    <?php  foreach ($location as $k=>$v): ?>
+                    <option value="<?php echo $k; ?>"><?php echo $v; ?></option>
+                    <?php endforeach; ?>                       
                 </select>
             </td>
         </tr>
