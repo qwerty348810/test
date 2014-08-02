@@ -1,5 +1,6 @@
-<?php //include_once 'forum_temp_inc.php'; ?>
-<form action="login.phtml" method="get" >
+<?php include_once 'variables.php'; ?>
+<form action="forum_temp_inc.php" method="get" >
+    <input type="hidden"  name="action" value="forum_temp_inc" />
     <table border="1" style="margin:auto;" bordercolor="#EEEEEE">
 		<tr>
             <td>Email</td>
@@ -25,7 +26,7 @@
             <td>Date of birth</td>
             <td>
                 <select name="day_b">  
-                <?php asort($day_b); ?>
+                <?php asort($day_b);?>
                 <?php  foreach ($day_b as $k=>$v): ?>
                 	<option value="<?php echo $k; ?>"><?php echo $v; ?></option>
                  <?php endforeach; ?>
