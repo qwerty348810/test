@@ -1,5 +1,5 @@
 <?php include_once 'variables.php'; ?>
-<form action="forum_temp_inc.php" method="get" >
+<form action="register.php" method="get" >
     <input type="hidden"  name="action" value="forum_temp_inc" />
     <table border="1" style="margin:auto;" bordercolor="#EEEEEE">
 		<tr>
