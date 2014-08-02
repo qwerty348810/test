@@ -26,7 +26,7 @@ $db_password='';
 $mysql_con=mysql_connect($db_host, $db_username, $db_password) or die (mysql_error ());
 $mysql_sel=mysql_select_db($db_name) or die(mysql_error());
 
-if ($_SERVER['HTTP_HOST']=='192.168.1.11') {
+if ($_SERVER['HTTP_HOST']=='192.168.1.4') {
 	$db_host=$_SERVER['HTTP_HOST'];
 	$db_username='dima';
 	$db_password='dima123';
