@@ -29,7 +29,7 @@
                     <?php asort($day_b);?>
                     <?php  foreach ($day_b as $k=>$v): ?>
                     <option value="<?php echo $k; ?>"><?php echo $v; ?></option>
-                    <?php endforeach; ?>                
+                    <?php endforeach; ?>                                                        
                 </select>  
                 <select name="month">
                     <?php asort($month);?>

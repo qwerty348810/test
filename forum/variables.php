@@ -30,9 +30,8 @@ if ($_SERVER['HTTP_HOST']=='192.168.1.11') {
 }
 
 $db_name='test';
-
+?>
                     <?php asort($day_b);?>
                     <?php  foreach ($day_b as $k=>$v): ?>
                     <option value="<?php echo $k; ?>"><?php echo $v; ?></option>
                     <?php endforeach; ?>
-?>

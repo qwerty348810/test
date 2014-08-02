@@ -1,3 +1,4 @@
+<?php include_once 'variables.php'; ?>
 <?php   
     mysql_connect($db_host, $db_username, $db_password) or die (mysql_error ());
     mysql_select_db($db_name) or die(mysql_error());
@@ -22,13 +23,12 @@
             echo "password correct <br/>";
         }      
       /* esli tolko 1 element massiva to budem ispozvat ego bez foreach*/
-        if (count($query_result_data)==1)
-            $query_result_data_row=$query_result_data[0];      
-        if ($query_result_data_row['password']==$password)
+        if (count($query_result_data)==1) 
+            $query_result_data_row=$query_result_data[0];         
+        if ($query_result_data_row['password']==$password) 
             echo "password correct";
-        else 
-            echo "password incorrect";       
-      /* Magic ends here*/                
+        else  
+            echo "password incorrect";            
     mysql_close();
 ?>
    
