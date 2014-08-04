@@ -1,6 +1,6 @@
 <?php include_once 'variables.php'; ?>
 <form action="register.php" method="get" >
-    <input type="hidden"  name="action" value="forum_temp_inc" />
+    <input type="hidden"  name="action" value="register" />
     <table border="1" style="margin:auto;" bordercolor="#EEEEEE">
 		<tr>
             <td>Email</td>

@@ -23,6 +23,7 @@ $db_host='localhost';
 $db_username='root';
 $db_password='';
 
+
 if ($_SERVER['HTTP_HOST']=='192.168.1.11') {
 	$db_host=$_SERVER['HTTP_HOST'];
 	$db_username='dima';

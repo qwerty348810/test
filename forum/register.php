@@ -1,10 +1,10 @@
 <?php include_once 'variables.php'; ?>
-<?php           
-    mysql_connect($db_host, $db_username, $db_password) or die (mysql_error ());
-    mysql_select_db($db_name) or die(mysql_error());
+<?php 
+    $mysql_con=mysql_connect($db_host, $db_username, $db_password) or die (mysql_error ());
+    $mysql_sel=mysql_select_db($db_name) or die(mysql_error());
         $query = "SELECT * FROM regist WHERE `email`='".$email."'";
         $sql = mysql_query($query) or die(mysql_error());
-            if (mysql_num_rows($sql) < 0) {
+            if (mysql_num_rows($sql) > 0) {
                 echo '<script type="text/javascript">alert("Mailbox is already Busy");</script>';
                 echo 'Email busy!';
                 echo '<script type="text/javascript">window.location = "forum.php";</script>';
