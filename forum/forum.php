@@ -22,7 +22,7 @@ echo "Views=". $_SESSION['views'];
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     </head>
     <body>         
-<?php 
+<?php
 $action='';
 
 include_once 'variables.php';
@@ -36,5 +36,6 @@ if (isset($_GET['action']) && file_exists($_GET['action'].".php")) {
 	include_once 'login.phtml';
 }
 ?>
+        
     </body>
 </html>

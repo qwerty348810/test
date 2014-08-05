@@ -21,8 +21,11 @@ $f1=( isset($_GET['f1']) ? $_GET['f1'] : '' );
  
 $db_host='localhost';
 $db_username='root';
+$db_name='test';
 $db_password='';
 
+$mysql_con=mysql_connect($db_host, $db_username, $db_password) or die (mysql_error ());
+$mysql_sel=mysql_select_db($db_name) or die(mysql_error());
 
 if ($_SERVER['HTTP_HOST']=='192.168.1.11') {
 	$db_host=$_SERVER['HTTP_HOST'];
@@ -30,5 +33,5 @@ if ($_SERVER['HTTP_HOST']=='192.168.1.11') {
 	$db_password='dima123';
 }
 
-$db_name='test';
+
 ?>                   

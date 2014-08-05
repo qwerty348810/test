@@ -1,9 +1,7 @@
 <?php include_once 'variables.php'; ?>
-<?php
-    $mysql_con=mysql_connect($db_host, $db_username, $db_password) or die (mysql_error ());
-    $mysql_sel=mysql_select_db($db_name) or die(mysql_error());
-    $sql = "SELECT * FROM regist WHERE `password`='".$password."' AND `email`='".$email."'";
-     $result=mysql_query($sql);      
+<?php    
+    $mysql_con= "SELECT * FROM regist WHERE `password`='".$password."' AND `email`='".$email."'";
+    $result=mysql_query($mysql_con);      
       /* Magic goes here */
     $query_result_data=array();
     while ($row = mysql_fetch_assoc($result)) {
