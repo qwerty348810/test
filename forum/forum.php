@@ -5,13 +5,16 @@ session_start();
 
 
 if(isset($_SESSION['views'])){
-$_SESSION['views']=$_SESSION['views']+1;
-}
-else {
+    $_SESSION['views']=$_SESSION['views']+1;
+}else {
 $_SESSION['views']=1;
-echo "Views=". $_SESSION['views'];
+    echo "Views=". $_SESSION['views'];
 }
 ?>
+<?php
+if(isset($_SESSION['views'])) { ?>
+ Click here to <a href="logout.phtml" tite="Logout">Logout.
+<?php } ?>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="" dir="">
@@ -34,6 +37,13 @@ if (isset($_GET['action']) && file_exists($_GET['action'].".php")) {
 	include_once 'not_found.phtml';
 }else {
 	include_once 'login.phtml';
+}
+if(isset($_SESSION['views'])){
+    $_SESSION['views']=$_SESSION['views']+1;
+}else {
+    echo "<form>
+            <input type=submit name=exit value=exit>
+         </form>";
 }
 ?>
         
