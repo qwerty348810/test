@@ -2,8 +2,6 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 session_start();
-
-
 if(isset($_SESSION['views'])){
     $_SESSION['views']=$_SESSION['views']+1;
 }else {
@@ -37,13 +35,6 @@ if (isset($_GET['action']) && file_exists($_GET['action'].".php")) {
 	include_once 'not_found.phtml';
 }else {
 	include_once 'login.phtml';
-}
-if(isset($_SESSION['views'])){
-    $_SESSION['views']=$_SESSION['views']+1;
-}else {
-    echo "<form>
-            <input type=submit name=exit value=exit>
-         </form>";
 }
 ?>
         
