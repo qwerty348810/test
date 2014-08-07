@@ -29,7 +29,7 @@ if (isset($_GET['action']) && file_exists($_GET['action'].".php")) {
 }elseif (isset($_GET['action']) && !file_exists($_GET['action'].".php")) {
 	include_once 'not_found.phtml';
 }else {
-	include_once 'login.php';
+	include_once 'community.php';
 }
 ?>
         
