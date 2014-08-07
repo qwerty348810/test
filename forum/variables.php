@@ -31,6 +31,5 @@ if ($_SERVER['HTTP_HOST']=='192.168.1.11') {
 	$db_username='dima';
 	$db_password='dima123';
 }
-
-
+$display="<a href='index.php?action=community'>Enter to Forum</a>";
 ?>                   

@@ -1,6 +1,5 @@
 <?php include_once 'variables.php'; ?>
-<?php 
-    $display="<a href='index.php?action=community'>Enter to Forum</a>";
+<?php     
     $mysql_con= "SELECT * FROM regist WHERE `password`='".$password."' AND `email`='".$email."'";
     $result=mysql_query($mysql_con);      
       /* Magic goes here */
