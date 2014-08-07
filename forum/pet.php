@@ -3,60 +3,9 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
         <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css" type="text/css"/>
         <title></title>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <style type="text/css">
-        body {         
-        background-image: url("http://eu.battle.net/wow/static/images/layout/bg/body-bg-baked-1920px.jpg?v=2");
-        }
-        table {                 
-        width:52%;        
-        background: black;
-        padding: 33px;
-        margin-top: 3%;
-        text-align: center;
-        }
-        .parent {
-        width:22%;
-        border: 1px;
-        margin-right: 3%;         
-        padding: 11px;
-        background: transparent;
-        }
-        .child {
-        width:33%;
-        border: 1px;
-        margin-left: 24.5%;
-        padding: 1px;
-        background: transparent;
-        color: azure;
-        font-size: 22px;
-        height: 50px;
-        }
-        a.menu {
-        text-decoration: none;    
-        color:#fff !important;
-        }      
-        td.color{
-            background-color: #A58F77;
-        }
-        td.colortopic{
-            background-color: #A58F77;
-        }
-        td.left{
-            text-align: left;
-        }
-        div.forum{
-            width: 954px;
-            height: 11px;
-            text-align: center;
-            padding: 33px;
-        }
-        .b1 {
-        background: #A58F77; 
-        color: white;        
-        }
-        </style>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>        
     </head>
     <body>
         <table align="center" class="parent">
