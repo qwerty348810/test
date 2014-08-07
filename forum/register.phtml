@@ -1,30 +1,30 @@
-<body>
+<div class="register">
     <form action="index.php" method="get" >
         <input type="hidden"  name="action" value="login_check" />
         <table border="1" style="margin:auto;" bordercolor="#EEEEEE">
             <tr>
-                <td>Email</td>
-                <td><input id="email" name="email" type="email" size="33"/></td>
+                <td class="color">Email</td>
+                <td class="color"><input id="email" name="email" type="email" size="33"/></td>
             </tr>
             <tr>
-                <td>Password</td>
-                <td><input id="password" name="password" type="text" size="33" required placeholder="Only numbers" pattern="^[ 0-9]+$"/></td>
+                <td class="color">Password</td>
+                <td class="color"><input id="password" name="password" type="text" size="33" required placeholder="Only numbers" pattern="^[ 0-9]+$"/></td>
             </tr>
             <tr>
-                <td>Name</td>
-                <td><input id="name" name="name" type="text" size="33" pattern="^[a-zA-Z]+$"/></td>
+                <td class="color">Name</td>
+                <td class="color"><input id="name" name="name" type="text" size="33" pattern="^[a-zA-Z]+$"/></td>
             </tr>
             <tr>
-                <td>Last Name</td>
-                <td><input id="lname" name="lname" type="text" size="33" pattern="^[a-zA-Z]+$"/></td>
+                <td class="color">Last Name</td>
+                <td class="color"><input id="lname" name="lname" type="text" size="33" pattern="^[a-zA-Z]+$"/></td>
             </tr>
             <tr>
-                <td>Nickname</td>
-                <td><input id="niname" name="nname" type="text" size="33" pattern="^[a-zA-Z]+$"/></td>
+                <td class="color">Nickname</td>
+                <td class="color"><input id="niname" name="nname" type="text" size="33" pattern="^[a-zA-Z]+$"/></td>
             </tr>
             <tr>
-                <td>Date of birth</td>
-                <td>
+                <td class="color">Date of birth</td>
+                <td class="color">
                     <select name="day_b">  
                         <?php asort($day_b);?>
                         <?php  foreach ($day_b as $k=>$v): ?>
@@ -46,14 +46,14 @@
                 </td>
             </tr>
             <tr>
-                <td>Sex</td>
-                <td id="sext"><input id="male" name="sex" type="radio" value="male" />Male
-                              <input id="female" name="sex" type="radio" value="female" />Female
+                <td class="color">Sex</td>
+                <td class="color" id="sext"><input id="male" name="sex" type="radio" value="male" />Male
+                                            <input id="female" name="sex" type="radio" value="female" />Female
                 </td>
             </tr>
             <tr>
-                <td>Location</td>
-                <td>
+                <td class="color">Location</td>
+                <td class="color">
                     <select name="location">
                         <?php asort($location);?>
                         <?php  foreach ($location as $k=>$v): ?>
@@ -63,7 +63,7 @@
                 </td>
             </tr>
             <tr>
-                <td id="f2">
+                <td class="color" id="f2">
                     <input id="f1" name="f1" type="checkbox" value="check">I accept Terms of Use of the ulD community<br>
                     <input name="submitted" type="hidden" value="1"/><input id="js_button" type="submit" value="Sign Up"/>
                 </td>
@@ -75,7 +75,7 @@
             <button type="submit">Button to Login</button>
         </div>
     </form>
-</body>    
+</div>
 <script type="text/javascript">
 
 $( document ).ready(function() {

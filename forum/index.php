@@ -14,6 +14,7 @@ $_SESSION['views']=1;
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
         <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css" type="text/css"/>
         <title>Forum</title>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     </head>

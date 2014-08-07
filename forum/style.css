@@ -32,6 +32,9 @@
         td.color{
             background-color: #A58F77;
         }
+        td.colortopic{
+            background-color: #A58F77;
+        }
         td.left{
             text-align: left;
         }
@@ -40,6 +43,9 @@
             height: 11px;
             text-align: center;
             padding: 33px;
+        }
+        div.register{
+            padding-top: 220px;
         }
         .b1 {
             background: #A58F77; 
