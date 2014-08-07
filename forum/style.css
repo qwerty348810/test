@@ -1,33 +1,33 @@
         body {         
-        background-image: url("http://eu.battle.net/wow/static/images/layout/bg/body-bg-baked-1920px.jpg?v=2");
+            background-image: url("http://eu.battle.net/wow/static/images/layout/bg/body-bg-baked-1920px.jpg?v=2");
         }
         table {                 
-        width:52%;        
-        background: black;
-        padding: 33px;
-        margin-top: 3%;
-        text-align: center;
+            width:52%;        
+            background: black;
+            padding: 33px;
+            margin-top: 3%;
+            text-align: center;
         }
         .parent {
-        width:22%;
-        border: 1px;
-        margin-right: 3%;         
-        padding: 11px;
-        background: transparent;
+            width:22%;
+            border: 1px;
+            margin-right: 3%;         
+            padding: 11px;
+            background: transparent;
         }
         .child {
-        width:33%;
-        border: 1px;
-        margin-left: 24.5%;
-        padding: 1px;
-        background: transparent;
-        color: azure;
-        font-size: 22px;
-        height: 50px;
+            width:33%;
+            border: 1px;
+            margin-left: 24.5%;
+            padding: 1px;
+            background: transparent;
+            color: azure;
+            font-size: 22px;
+            height: 50px;
         }
         a.menu {
-        text-decoration: none;    
-        color:#fff !important;
+            text-decoration: none;    
+            color:#fff !important;
         }      
         td.color{
             background-color: #A58F77;
@@ -42,6 +42,6 @@
             padding: 33px;
         }
         .b1 {
-        background: #A58F77; 
-        color: white;        
+            background: #A58F77; 
+            color: white;        
         }
