@@ -1,5 +1,6 @@
 <?php include_once 'variables.php'; ?>
-<?php    
+<?php 
+    $display="<a href='index.php?action=community'>Enter to Forum</a>";
     $mysql_con= "SELECT * FROM regist WHERE `password`='".$password."' AND `email`='".$email."'";
     $result=mysql_query($mysql_con);      
       /* Magic goes here */
@@ -19,6 +20,8 @@
         echo $column_title.'='.$column_value."<br/>";
     if ($column_title=='password'&& $column_value==$password)
         echo "password correct <br/>";
+        echo"================================>>>>>>>>>>";
+        echo $display."</br>";
     }      
       /* esli tolko 1 element massiva to budem ispozvat ego bez foreach*/
     if (count($query_result_data)==1) 

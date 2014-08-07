@@ -13,7 +13,7 @@
             ("'.$email.'", "'.$password.'", "'.$name.'", "'.$lname.'", "'.$nname.'", "'.$dmy.'", "'.$sex.'", "'.$loc.'")';
             $result=mysql_query($strSql); 
         if ($strSql){
-            echo "Thank you for registering!!!!";          
+            echo "Thank you for registering!!!!";            
         }
     mysql_close();
 ?>               
