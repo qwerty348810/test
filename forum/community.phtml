@@ -46,14 +46,28 @@
                 </td>
             </tr>
         </table>
-        <form action="index.php" method="get" >
+<?php
+$action='';
+
+include_once 'variables.php';
+
+if (isset($_GET['action']) && file_exists($_GET['action'].".php")) {
+	$action=$_GET['action'];	 
+	include_once $action.'.php';
+}elseif (isset($_GET['action']) && !file_exists($_GET['action'].".php")) {
+	include_once 'not_found.phtml';
+}else {
+	include_once 'community.php';
+}
+?>
+        <form action="community.php" method="get" >
             <div class="forumc">
                 <input type="hidden"  name="action" value="variable_topic" />
                 <input class="b1" align="middle" type="submit" value="NEW TOPIC"/>
                 <p>Coment<Br><textarea name="texttopic" cols="25" rows="3" pattern="^[a-zA-Z]+$"></textarea></p>
             </div>
         </form>
-        <table style="color:azure" align="center" cellspacing="22" border="1">
+        <table class="general">
             <tr>
                 <td class="color">
                     <a class="menu" href="index.php?action=page_not">New</a>
@@ -155,5 +169,19 @@
                 </td>
             </tr>
         </table>
+<?php
+$action='';
+
+include_once 'variables.php';
+
+if (isset($_GET['action']) && file_exists($_GET['action'].".php")) {
+	$action=$_GET['action'];	 
+	include_once $action.'.php';
+}elseif (isset($_GET['action']) && !file_exists($_GET['action'].".php")) {
+	include_once 'not_found.phtml';
+}else {
+	include_once 'community.php';
+}
+?>        
     </body>
 </html>    
