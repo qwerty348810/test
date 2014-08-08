@@ -8,7 +8,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>        
     </head>
     <body>
-        <table align="center" class="parent">
+        <table class="parent">
             <tr>
                 <td>
                     <a href="index.php?action=register">Registration</a>
@@ -24,7 +24,7 @@
                 </td>
             </tr>
         </table>
-         <table align="center" class="child">
+         <table class="child">
             <tr>
                 <td width="17%">
                     <a class="menu" href="index.php?action=page_not">General</a>
@@ -51,7 +51,7 @@
                 <input type="hidden"  name="action" value="variable_coment" />
                 <input class="b1" align="middle" type="submit" value="NEW COMENT"/>           
             </div>                                 
-            <table align="center" cellspacing="1" border="1">
+            <table class="general">
                 <tr>
                     <td width="60%" class="colortopic">
                         SUBJECT

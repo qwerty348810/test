@@ -1,12 +1,21 @@
         body {         
             background-image: url("http://eu.battle.net/wow/static/images/layout/bg/body-bg-baked-1920px.jpg?v=2");
         }
-        table {                 
-            width:52%;        
+        table {
+            width:52%;           
             background: black;
             padding: 33px;
             margin-top: 3%;
             text-align: center;
+        }
+        table.general {                 
+            width:52%;           
+            background: black;
+            padding: 33px;
+            margin-top: 3%;
+            text-align: center;
+            border: 1px;
+            margin: auto;
         }
         .parent {
             width:22%;

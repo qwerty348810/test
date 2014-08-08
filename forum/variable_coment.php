@@ -2,14 +2,13 @@
 $mysql_con= "SELECT * FROM topic " ;
     $sql = mysql_query($mysql_con) or die(mysql_error());        
             $strSql=' INSERT INTO topic 
-            (id_topic,text)  
+            (text)  
             VALUES 
-            ("'.$topic2.'", "'.$text.'")';
+            ("'.$text.'")';
             $result=mysql_query($strSql); 
         if ($strSql){
             echo "!!!!!!!!!!";            
-        }
-            echo $topic2;
-            echo $text;
+        }            
+            echo $textcoment;
     mysql_close();
 ?>
