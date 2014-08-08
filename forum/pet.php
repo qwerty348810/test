@@ -50,7 +50,7 @@
             <div class="forum">
                 <input type="hidden"  name="action" value="variable_coment" />
                 <input class="b1" align="middle" type="submit" value="NEW COMENT"/>           
-            </div>        
+            </div>                                 
             <table align="center" cellspacing="1" border="1">
                 <tr>
                     <td width="60%" class="colortopic">
