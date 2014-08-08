@@ -17,6 +17,7 @@ $sex=( isset($_GET['sex']) ? $_GET['sex'] : '' );
 $loc=( isset($_GET['location']) ? $_GET['location'] : '' );
 $action=( isset($_GET['action']) ? $_GET['action'] : '' );
 $f1=( isset($_GET['f1']) ? $_GET['f1'] : '' );
+$texttopic=( isset($_GET['texttopic']) ? $_GET['texttopic'] : '' );
 $text=( isset($_GET['text']) ? $_GET['text'] : '' );
 $db_host='localhost';
 $db_username='root';
@@ -36,4 +37,5 @@ $mysql_sel=mysql_select_db($db_name) or die(mysql_error());
 
 $display="<a href='index.php?action=community'>Enter to Forum</a>";
 $topic1="1";
+$topic2="2";
 ?>                   

@@ -46,7 +46,7 @@
                 </td>
             </tr>
         </table>              
-        <form action="pet.php" method="get" >
+        <form action="index.php" method="get" >
             <div class="forum">
                 <input type="hidden"  name="action" value="variable_coment" />
                 <input class="b1" align="middle" type="submit" value="NEW COMENT"/>           

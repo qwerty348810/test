@@ -50,6 +50,12 @@
             text-align: center;
             padding: 33px;
         }
+        div.forumc{
+            width: 1800px;
+            height: 27px;
+            text-align: center;
+            padding: 33px;             
+        }
         div.register{
             padding-top: 220px;
         }
