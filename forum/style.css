@@ -28,7 +28,13 @@
         a.menu {
             text-decoration: none;    
             color:#fff !important;
-        }      
+        }
+        td {
+            border-radius:6px; 
+            -webkit-border-radius:6px; 
+            -moz-border-radius:5px; 
+            -khtml-border-radius:10px;
+        }
         td.color{
             background-color: #A58F77;
         }

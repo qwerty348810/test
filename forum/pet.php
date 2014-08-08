@@ -4,7 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css" type="text/css"/>
-        <title></title>
+        <title>Pet</title>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>        
     </head>
     <body>
@@ -20,7 +20,7 @@
                     Search
                 </td>
                 <td>
-                    <input name=?"keywords" type=?"text" maxlength=?"28">?
+                    <input name="keywords" type="text" maxlength="28" />
                 </td>
             </tr>
         </table>
@@ -45,30 +45,48 @@
                     <a class="menu" href="index.php?action=page_not">FAQ</a>
                 </td>
             </tr>
-        </table>        
-        <div class="forum">
-            <form action="pet.php" method="get" >
-                <input class="b1" align="middle" type="submit" value="NEW TOPIC">
-            </form>
-        </div>        
-        <table align="center" cellspacing="1" border="1">
-            <tr>
-                <td width="60%" class="colortopic">
-                    SUBJECT
-                </td>
-                <td width="15%" class="colortopic">
-                    AUTHOR
-                </td>
-                <td class="colortopic">
-                    REPLIES
-                </td>
-                <td class="colortopic">
-                    VIEWS
-                </td>
-                <td width="20%" class="colortopic">
-                    LAST POSTER
-                </td>
-            </tr>
-        </table>
+        </table>              
+        <form action="pet.php" method="get" >
+            <div class="forum">
+                <input type="hidden"  name="action" value="variable_coment" />
+                <input class="b1" align="middle" type="submit" value="NEW COMENT"/>           
+            </div>        
+            <table align="center" cellspacing="1" border="1">
+                <tr>
+                    <td width="60%" class="colortopic">
+                        SUBJECT
+                    </td>
+                    <td width="15%" class="colortopic">
+                        AUTHOR
+                    </td>
+                    <td class="colortopic">
+                        REPLIES
+                    </td>
+                    <td class="colortopic">
+                        VIEWS
+                    </td>
+                    <td width="20%" class="colortopic" >
+
+                    </td>
+                <tr>
+                    <td  class="colortopic">
+                        <p>Coment<Br>
+                        <textarea name="text" cols="40" rows="3"></textarea></p>   
+                    </td>
+                    <td  class="colortopic">
+
+                    </td>
+                    <td class="colortopic">
+
+                    </td>
+                    <td class="colortopic">
+
+                    </td>
+                    <td  class="colortopic" >
+
+                    </td>
+                </tr>               
+            </table>
+        </form>
     </body>
 </html>    
