@@ -8,12 +8,12 @@ $mysql_con= "SELECT * FROM topic " ;
             $result=mysql_query($strSql);
             $strSql2='SELECT * FROM topic WHERE title';
             $rs=mysql_query($strSql2);
-            while($row = mysql_fetch_array($rs)) {
-                print ($row);
+            while($row = mysql_fetch_assoc($result)) {
+                print_r($row);
                 
                 echo "<table><tr><td>'".$title."'</td></tr></table>";               
-	}
-         print ($row);
+		}
+         
         
     mysql_close();
 ?>
