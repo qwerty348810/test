@@ -1,24 +1,22 @@
 <?php
-$mysql_con= "SELECT * FROM topic " ;
-    $sql = mysql_query($mysql_con) or die(mysql_error());        
-            
-            
-            $strSql2='SELECT * FROM topic WHERE title';
-            $rs=mysql_query($strSql2);
-<<<<<<< HEAD
-            while($row = mysql_fetch_assoc($rs)) {
-                print_r($row);                               
-                echo "<table><tr><td>'".$title."'</td></tr></table>";               
-	}       
-        print_r($row);
-=======
-            while($row = mysql_fetch_assoc($result)) {
-                print_r($row);
-                
-                echo "<table><tr><td>'".$title."'</td></tr></table>";               
-		}
-         
+    $mysql_con= "SELECT * FROM topic " ;   
+    $result = mysql_query($mysql_con) or die(mysql_error());        
+ 
+	echo "<table class='general'>";
+        while($row = mysql_fetch_assoc($result)) {
+            print_r($row);
+            echo '<tr><td class="color">'.$row['title'].'</td></tr>';               
+        }
+        echo "</table>";
         
->>>>>>> fa1c6d942fa7b4e132f1db64af39d28888a34f7d
+        $strSql=' INSERT INTO topic 
+            (text)  
+            VALUES 
+            ("'.$texttopic.'")';
+                
+        $res=mysql_query($strSql); 
+        
+        print_r($texttopic);
+
     mysql_close();
-?>
+ ?>

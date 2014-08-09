@@ -1,11 +1,10 @@
-<?php
-$mysql_con= "SELECT * FROM topic " ;
-    $sql = mysql_query($mysql_con) or die(mysql_error());        
-            $strSql=' INSERT INTO topic 
+<?php  
+    $strSql=' INSERT INTO coment 
             (text)  
             VALUES 
-            ("'.$text.'")';
-            $result=mysql_query($strSql); 
+            ("'.$textcoment.'")';
+                
+        $result=mysql_query($strSql); 
         if ($strSql){
             echo "!!!!!!!!!!";            
         }            

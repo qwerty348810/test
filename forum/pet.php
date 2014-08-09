@@ -27,7 +27,7 @@
          <table class="child">
             <tr>
                 <td width="17%">
-                    <a class="menu" href="index.php?action=page_not">General</a>
+                    <a class="menu" href="index.php?action=community">General</a>
                 </td>
                 <td width="17%">
                     <a class="menu" href="index.php?action=page_not">Forums</a>
@@ -71,7 +71,7 @@
                 <tr>
                     <td  class="colortopic">
                         <p>Coment<Br>
-                        <textarea name="text" cols="40" rows="3"></textarea></p>   
+                        <textarea name="textcoment" cols="40" rows="3"></textarea></p>   
                     </td>
                     <td  class="colortopic">
 
@@ -87,6 +87,6 @@
                     </td>
                 </tr>               
             </table>
-        </form>
+        </form>       
     </body>
 </html>    
