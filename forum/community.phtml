@@ -59,6 +59,12 @@ if (isset($_GET['action']) && file_exists($_GET['action'].".php")) {
 }else {
 	include_once 'community.php';
 }
+
+if (isset ($_GET['parent_id'])){
+    $action=$_GET['parent_id'];
+}else {
+    $_GET['parent_id']="0";
+}
 ?>
         <form action="community.php" method="get" >
             <div class="forumc">
