@@ -60,10 +60,10 @@ if (isset($_GET['action']) && file_exists($_GET['action'].".php")) {
 	include_once 'community.php';
 }
 
-if (isset ($_GET['parent_id'])){
-    $action=$_GET['parent_id'];
+if (isset ($_GET['id'])){
+    $parent_id=$_GET['id'];
 }else {
-    $_GET['parent_id']="0";
+    $parent_id="0";
 }
 echo $_GET['parent_id'];
 ?>
