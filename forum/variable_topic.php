@@ -5,11 +5,12 @@ $mysql_con= "SELECT * FROM topic " ;
             (title)  
             VALUES 
             ("'.$texttopic.'")';
-            $result=mysql_query($strSql); 
-        if ($strSql){
-            echo "!!!!!!!!!!";
-            echo "<table class='general'><tr><td class='left'>.$textopic.</td></tr></table>";
-        }            
-            echo $texttopic;
+            $result=mysql_query($strSql);
+            $strSql2='SELECT * FROM topic WHERE title';
+            $rs=mysql_query($strSql2);
+            while($row = mysql_fetch_array($rs)) {
+                echo "<table><tr><td>'".$title."'</td></tr></table>";               
+	}
+        
     mysql_close();
 ?>

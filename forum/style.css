@@ -7,9 +7,8 @@
             padding: 33px;
             margin-top: 5%;
             text-align: center;
-            border: 1px;
-            margin-left: 24%;
-            border-color: azure;
+            border: 10px;
+            margin-left: 24%;                        
         }
         .parent {
             width:22%;
