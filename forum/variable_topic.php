@@ -6,7 +6,6 @@ $mysql_con= "SELECT * FROM topic " ;
             while($row = mysql_fetch_assoc($rs)) {
                 print_r($row);                               
                 echo "<table><tr><td>'".$title."'</td></tr></table>";               
-	} 
-        
+	}        
     mysql_close();
 ?>
