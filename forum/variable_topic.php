@@ -9,8 +9,11 @@ $mysql_con= "SELECT * FROM topic " ;
             $strSql2='SELECT * FROM topic WHERE title';
             $rs=mysql_query($strSql2);
             while($row = mysql_fetch_array($rs)) {
+                print ($row);
+                
                 echo "<table><tr><td>'".$title."'</td></tr></table>";               
 	}
+         print ($row);
         
     mysql_close();
 ?>
