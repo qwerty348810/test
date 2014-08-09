@@ -7,6 +7,7 @@
             print_r($row);
             echo '<tr><td class="color">'.$row['title'].'</td></tr></a>';               
         }
-        echo "</table>";       
+        echo "</table>";
+        echo $_GET['parent_id'];
    mysql_close();
  ?>
