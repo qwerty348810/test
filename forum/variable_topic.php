@@ -1,5 +1,5 @@
 <?php
-    $mysql_con= "SELECT * FROM topic " ;   
+    $mysql_con= "SELECT * FROM topic WHERE parent_id='0'" ;   
     $result = mysql_query($mysql_con) or die(mysql_error());        
  
 	echo "<table class='general'>";
