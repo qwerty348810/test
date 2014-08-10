@@ -5,7 +5,7 @@
 	echo "<table class='general'>";
         while($row = mysql_fetch_assoc($result)) {
             print_r($row);
-            echo '<a href=community.php?action=variable_topic&id='.$row['id'].'><tr><td class="color">'.$row['title'].'</td></tr></a>';               
+            echo '<tr><td class="color"><a href=community.php?action=variable_topic&parent_id='.$row['id'].'>'.$row['title'].'</a></td></tr>';               
         }
         echo "</table>";        
    mysql_close();
