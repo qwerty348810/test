@@ -23,29 +23,7 @@
                     <input name="keywords" type="text" maxlength="28">
                 </td>
             </tr>
-        </table>
-         <table class="child">
-            <tr>
-                <td width="17%">
-                    <a class="menu" href="index.php?action=community">General</a>
-                </td>
-                <td width="17%">
-                    <a class="menu" href="index.php?action=page_not">Forums</a>
-                </td>
-                <td width="17%">
-                    <a class="menu" href="index.php?action=page_not">Files</a>
-                </td>
-                <td width="16%">
-                    <a class="menu" href="index.php?action=page_not">Info Base</a>
-                </td>
-                 <td width="18%">
-                    <a class="menu" href="index.php?action=page_not">Documentation</a>
-                </td>
-                 <td>
-                    <a class="menu" href="index.php?action=page_not">FAQ</a>
-                </td>
-            </tr>
-        </table>
+        </table>        
 <?php
 $action='';
 
@@ -56,128 +34,21 @@ if (isset ($_GET['parent_id'])){
 }else {
 	$parent_id="0";
 }
-print_r ($parent_id);
-
 if (isset($_GET['action']) && file_exists($_GET['action'].".php")) {
 	$action=$_GET['action'];	 
 	include_once $action.'.php';
 }elseif (isset($_GET['action']) && !file_exists($_GET['action'].".php")) {
 	include_once 'not_found.phtml';
 }else {
-	include_once 'community.php';
+	include_once 'community.php?action=variable_topic';
 }
-
- 
-
 ?>
         <form action="community.php" method="get" >
             <div class="forumc">
                 <input type="hidden"  name="action" value="variable_topic" />
                 <input class="b1" align="middle" type="submit" value="NEW TOPIC"/>
-                <p>Coment<Br><textarea name="texttopic" cols="25" rows="3" pattern="^[a-zA-Z]+$"></textarea></p>
+                
             </div>
-        </form>
-        <table class="general">
-            <tr>
-                <td class="color">
-                    <a class="menu" href="index.php?action=page_not">New</a>
-                </td>
-                <td class="color" width="5%">
-                    <a class="menu" href="index.php?action=page_not">Topics</a>
-                </td>
-                <td class="color" width="5%">
-                    <a class="menu" href="index.php?action=page_not">Messages</a>
-                </td>
-                <td class="color" width="30%">
-                    <a class="menu" href="index.php?action=page_not">The latest posts</a>
-                </td>
-            </tr>
-            <tr>
-                <td class="left">
-                    <a class="menu" href="index.php?action=pet">Pet Battles</a>
-                </td>
-                <td>                    
-                </td>
-                <td>                    
-                </td>
-                <td>                    
-                </td>
-            </tr>
-            <tr>
-                <td class="color">
-                    <a class="menu" href="index.php?action=page_not">General Forums</a>
-                </td>
-                <td class="color">
-                    <a class="menu" href="index.php?action=page_not">Topics</a>
-                </td>
-                <td class="color">
-                    <a class="menu" href="index.php?action=page_not">Messages</a>
-                </td>
-                <td class="color">
-                    Technical Support
-                </td>
-            </tr>
-            <tr>
-                <td class="left">
-                    <a class="menu" href="index.php?action=page_not">Technical Support</a>
-                </td>
-                <td>                    
-                </td>
-                <td>                    
-                </td>
-                <td>                    
-                </td>
-            </tr>
-            <tr>
-                <td class="color">
-                    <a class="menu" href="index.php?action=page_not">PHP</a>
-                </td>
-                <td class="color">
-                    <a class="menu" href="index.php?action=page_not">Topics</a>
-                </td>
-                <td class="color">
-                    <a class="menu" href="index.php?action=page_not">Messages</a>
-                </td>
-                <td class="color">
-                    <a class="menu" href="index.php?action=page_not">The latest posts</a>
-                </td>
-            </tr>
-            <tr>
-                <td class="left">
-                    <a class="menu" href="index.php?action=page_not">Little about PHP</a>
-                </td>
-                <td>                    
-                </td>
-                <td>                    
-                </td>
-                <td>                    
-                </td>
-            </tr>
-            <tr>
-                <td class="color">
-                    <a class="menu" href="index.php?action=page_not">Private forums</a>
-                </td>
-                <td class="color">
-                    <a class="menu" href="index.php?action=page_not">Topics</a>
-                </td>
-                <td class="color">
-                    <a class="menu" href="index.php?action=page_not">Messages</a>
-                </td>
-                <td class="color">
-                    <a class="menu" href="index.php?action=page_not">The latest posts</a>
-                </td>
-            </tr>
-            <tr>
-                <td class="left">
-                    <a class="menu" href="index.php?action=page_not">General Beta Feedback</a>
-                </td>
-                <td>                    
-                </td>
-                <td>                    
-                </td>
-                <td>                    
-                </td>
-            </tr>
-        </table>        
+        </form>               
     </body>
 </html>    
