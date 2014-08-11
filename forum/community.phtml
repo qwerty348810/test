@@ -23,7 +23,8 @@
                     <input name="keywords" type="text" maxlength="28">
                 </td>
             </tr>
-        </table>        
+        </table> 
+        <form action="community.php?action=variable_topic&parent_id=56" method="get" >
 <?php
 $action='';
 
@@ -43,6 +44,7 @@ if (isset($_GET['action']) && file_exists($_GET['action'].".php")) {
 }else {
 	include_once 'variable_topic.php';
 }
-?>                  
+?>      
+        </form>                 
     </body>
 </html>    
