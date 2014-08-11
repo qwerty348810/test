@@ -1,4 +1,5 @@
 <?php
+$textcoment=( isset($_GET['textcoment']) ? $_GET['textcoment'] : '' );
 $action=( isset($_GET['action']) ? $_GET['action'] : '' );
 $id=( isset($_GET['id']) ? $_GET['id'] : '' );
 $db_host='localhost';

@@ -12,5 +12,5 @@
         }
         echo "</table>";
         echo $parent_id;
-   mysql_close();
+    mysql_close();
 ?>
