@@ -34,9 +34,6 @@ if (isset ($_GET['parent_id'])){
 }else {
     $parent_id="0";
 }
-if ($parent_id="0"){
-    $action="messege.php";
-}
 
 if (isset($_GET['action']) && file_exists($_GET['action'].".php")) {
 	$action=$_GET['action'];	 
@@ -46,12 +43,6 @@ if (isset($_GET['action']) && file_exists($_GET['action'].".php")) {
 }else {
 	include_once 'variable_topic.php';
 }
-?>
-        <form action="community.php" method="get" >
-            <div class="forumc">
-                <input type="hidden"  name="action" value="variable_topic" />
-                <input class="b1" align="middle" type="submit" value="NEW TOPIC"/>               
-            </div>
-        </form>               
+?>                  
     </body>
 </html>    

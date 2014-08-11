@@ -1,6 +1,6 @@
 <?php
 $action=( isset($_GET['action']) ? $_GET['action'] : '' );
-
+$id=( isset($_GET['id']) ? $_GET['id'] : '' );
 $db_host='localhost';
 $db_username='root';
 $db_name='test';
