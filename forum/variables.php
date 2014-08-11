@@ -1,4 +1,6 @@
 <?php
+$action=( isset($_GET['action']) ? $_GET['action'] : '' );
+
 $db_host='localhost';
 $db_username='root';
 $db_name='test';

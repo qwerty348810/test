@@ -34,6 +34,9 @@ if (isset ($_GET['parent_id'])){
 }else {
     $parent_id="0";
 }
+if ($parent_id="0"){
+    $action="messege.php";
+}
 
 if (isset($_GET['action']) && file_exists($_GET['action'].".php")) {
 	$action=$_GET['action'];	 
