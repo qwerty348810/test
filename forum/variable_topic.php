@@ -17,9 +17,7 @@
             while($row2 = mysql_fetch_assoc($result2)) {
                 echo '<tr><td class="color">'.$row2['text'].'</td></tr>';
             } 
-        }
-    
-    
+        }       
         echo "</table>";
         echo $parent_id;
     mysql_close();

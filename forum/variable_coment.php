@@ -3,8 +3,7 @@
     $strSql=' INSERT INTO coment 
             (text)  
             VALUES 
-            ("'.$textcoment.'")';        
-        
+            ("'.$textcoment.'")';               
         $result=mysql_query($strSql) or die(mysql_error()); 
         echo "<table class='general'>";                           
         echo "</table>";
