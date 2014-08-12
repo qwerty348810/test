@@ -13,6 +13,7 @@
         if ($parent_id!="0"){
             echo "<p>Coment<Br><textarea name='textcoment' cols='25' rows='3' ></textarea></p>
             <input type='hidden'  name='action' value='variable_coment' />
+            <input type='hidden'  name='parent_id' value='$parent_id' />
             <input class='b1' align='middle' type='submit' value='NEW TOPIC'/>";
             while($row2 = mysql_fetch_assoc($result2)) {
                 echo '<tr><td class="color">'.$row2['text'].'</td></tr>';
