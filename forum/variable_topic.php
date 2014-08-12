@@ -19,6 +19,17 @@
                 echo '<tr><td class="color">'.$row2['text'].'</td></tr>';
             } 
         }
+        $mysql_con4= "SELECT * FROM messeges WHERE parent_id='".$parent_id."'";
+        $result4 = mysql_query($mysql_con4) or die(mysql_error());
+        if (($rows['text'])==="0"){
+            echo "<p>Messeges<Br><textarea name='messeges' cols='25' rows='3' ></textarea></p>
+            <input type='hidden'  name='action' value='messeges' />
+            <input type='hidden'  name='parent_id' value='$parent_id' />
+            <input class='b1' align='middle' type='submit' value='NEW MESSEGES'/>";
+            while($row4 = mysql_fetch_assoc($result4)) {
+                echo '<tr><td class="color">'.$row4['messeges'].'</td></tr>';
+            } 
+        }
         echo "</table>";
         echo $parent_id;
     mysql_close();
