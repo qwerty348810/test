@@ -8,7 +8,7 @@
                 echo '<tr><td class="color">'.$row['text'].'</td></tr>';
             }
         }    
-    $mysql_con2= "SELECT * FROM coment" ;
+    $mysql_con2= "SELECT * FROM coment WHERE parent_id='".$parent_id."'";
     $result2 = mysql_query($mysql_con2) or die(mysql_error());
         if ($parent_id!="0"){
             echo "<p>Coment<Br><textarea name='textcoment' cols='25' rows='3' ></textarea></p>
