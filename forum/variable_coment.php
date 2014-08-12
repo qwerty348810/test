@@ -1,12 +1,9 @@
-<?php
-    
-    $strSql=' INSERT INTO coment 
-            (text)  
-            VALUES 
-            ("'.$textcoment.'")';               
-        $result=mysql_query($strSql) or die(mysql_error()); 
-        echo "<table class='general'>";                           
-        echo "</table>";
+<?php       
+    $mysql_con3=' INSERT INTO coment 
+        (text,parent_id)  
+        VALUES 
+        ("'.$textcoment.'","'.$parent_id.'")';               
+    $result3=mysql_query($mysql_con3) or die(mysql_error()); 
         if ($strSql){
             echo "!!!!!!!!!!";
             echo $strSql ;

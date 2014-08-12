@@ -17,5 +17,7 @@ $mysql_con=mysql_connect($db_host, $db_username, $db_password) or die (mysql_err
 $mysql_sel=mysql_select_db($db_name) or die(mysql_error());
 $mysql_con2=mysql_connect($db_host, $db_username, $db_password) or die (mysql_error ());
 $mysql_sel2=mysql_select_db($db_name) or die(mysql_error());
+$mysql_con3=mysql_connect($db_host, $db_username, $db_password) or die (mysql_error ());
+$mysql_sel3=mysql_select_db($db_name) or die(mysql_error());
 
 ?>                   
