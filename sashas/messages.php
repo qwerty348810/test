@@ -1,4 +1,5 @@
 <?php
+$message_added="";
 
 if (isset($_POST['parent_id'])) {
 	$post_parent_id=$_POST['parent_id'];
@@ -6,7 +7,8 @@ if (isset($_POST['parent_id'])) {
 	
 	$sql="INSERT INTO messages (messages, parent_id) VALUES ('".$post_message_text."',".$post_parent_id.") ";
 	mysql_query($sql,$mysql_con);
-	echo "<center>Message Added! Thanks</center>";
+	$message_added="<center>Message Added! Thanks</center>";
+	 
 }
 
 $parent_id=(isset($_GET['parent_id']) ? $_GET['parent_id'] : 0);
