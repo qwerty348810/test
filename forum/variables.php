@@ -1,6 +1,6 @@
 <?php
 $textcoment=( isset($_GET['textcoment']) ? $_GET['textcoment'] : '' );
-$messeges=( isset($_GET['textmesseges']) ? $_GET['textmesseges'] : '' );
+$messeges=( isset($_GET['messeges']) ? $_GET['messeges'] : '' );
 $row=( isset($_GET['row']) ? $_GET['row'] : '' );
 $action=( isset($_GET['action']) ? $_GET['action'] : '' );
 $id=( isset($_GET['id']) ? $_GET['id'] : '' );

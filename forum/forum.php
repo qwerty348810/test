@@ -14,7 +14,6 @@
             <input type='hidden'  name='action' value='topic' />
             <input type='hidden'  name='parent_id' value='$parent_id' />
             <input class='b1' align='middle' type='submit' value='NEW TOPIC'/>";
-    }                    
-        echo "</table>";
+    }                                                        
     mysql_close();
 ?>
