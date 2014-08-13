@@ -21,4 +21,4 @@ while ($row = mysql_fetch_assoc($result)) {
 	array_push($messages, $row);
 }
 
-include_once $action.'.phtml';
+include_once $template_dir.$action.'.phtml';

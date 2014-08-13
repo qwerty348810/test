@@ -17,4 +17,4 @@ $forum_action='forum';
 if ($parent_id) 
 	$forum_action='messages';
 
-include_once $action.'.phtml';
+include_once $template_dir.$action.'.phtml';

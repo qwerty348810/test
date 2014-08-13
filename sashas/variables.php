@@ -1,5 +1,6 @@
 <?php
 
+$template_dir="template/";
 
 $db_host='localhost';
 $db_username='root';
