@@ -21,3 +21,4 @@ mysql_select_db($db_name,$mysql_con) or die(mysql_error());
 */
 
 $db_connection=new database();
+ 
