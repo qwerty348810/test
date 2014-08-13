@@ -1,1 +1,4 @@
-<?php include_once 'community.phtml';?>
+<?php
+
+include_once 'community.phtml';
+?>
