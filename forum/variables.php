@@ -1,5 +1,7 @@
 <?php
 $textcoment=( isset($_GET['textcoment']) ? $_GET['textcoment'] : '' );
+$messeges=( isset($_GET['textmesseges']) ? $_GET['textmesseges'] : '' );
+$row=( isset($_GET['row']) ? $_GET['row'] : '' );
 $action=( isset($_GET['action']) ? $_GET['action'] : '' );
 $id=( isset($_GET['id']) ? $_GET['id'] : '' );
 $db_host='localhost';
@@ -21,5 +23,7 @@ $mysql_con3=mysql_connect($db_host, $db_username, $db_password) or die (mysql_er
 $mysql_sel3=mysql_select_db($db_name) or die(mysql_error());
 $mysql_con4=mysql_connect($db_host, $db_username, $db_password) or die (mysql_error ());
 $mysql_sel4=mysql_select_db($db_name) or die(mysql_error());
+$mysql_con5=mysql_connect($db_host, $db_username, $db_password) or die (mysql_error ());
+$mysql_sel5=mysql_select_db($db_name) or die(mysql_error());
 
 ?>                   
