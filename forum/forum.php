@@ -10,7 +10,7 @@
             echo '<tr><td class="color"><a href=community.php?action='.$action.'&parent_id='.$row['id'].'>'.$row['title'].'</a></td></tr>';        
         }
     if ($action!="forum"){
-            echo "<p>Title theme<Br><textarea name='textcoment' cols='25' rows='1' ></textarea></p>
+            echo "<p>Title theme<Br><textarea name='texttopic' cols='25' rows='1' ></textarea></p>
             <input type='hidden'  name='action' value='topic' />
             <input type='hidden'  name='parent_id' value='$parent_id' />
             <input class='b1' align='middle' type='submit' value='NEW TOPIC'/>";

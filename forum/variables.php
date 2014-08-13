@@ -1,5 +1,5 @@
 <?php
-$textcoment=( isset($_GET['textcoment']) ? $_GET['textcoment'] : '' );
+$texttopic=( isset($_GET['texttopic']) ? $_GET['texttopic'] : '' );
 $messeges=( isset($_GET['messeges']) ? $_GET['messeges'] : '' );
 $row=( isset($_GET['row']) ? $_GET['row'] : '' );
 $action=( isset($_GET['action']) ? $_GET['action'] : '' );
@@ -17,13 +17,4 @@ if ($_SERVER['HTTP_HOST']=='192.168.1.11') {
 
 $mysql_con=mysql_connect($db_host, $db_username, $db_password) or die (mysql_error ());
 $mysql_sel=mysql_select_db($db_name) or die(mysql_error());
-$mysql_con2=mysql_connect($db_host, $db_username, $db_password) or die (mysql_error ());
-$mysql_sel2=mysql_select_db($db_name) or die(mysql_error());
-$mysql_con3=mysql_connect($db_host, $db_username, $db_password) or die (mysql_error ());
-$mysql_sel3=mysql_select_db($db_name) or die(mysql_error());
-$mysql_con4=mysql_connect($db_host, $db_username, $db_password) or die (mysql_error ());
-$mysql_sel4=mysql_select_db($db_name) or die(mysql_error());
-$mysql_con5=mysql_connect($db_host, $db_username, $db_password) or die (mysql_error ());
-$mysql_sel5=mysql_select_db($db_name) or die(mysql_error());
-
 ?>                   
