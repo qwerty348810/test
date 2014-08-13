@@ -1,7 +1,7 @@
-<table>
+<table align="center" border="1">
 	<?php foreach ($topics as $topic_val):?>
 	<tr>
-		<td><?php echo $topic_key; ?></td>
+		<td><a href="index.php?action=<?php echo $action; ?>&parent_id=<?php  echo $topic_val['id'] ?>"><?php  echo $topic_val['title'] ?></a></td>
 	</tr>
 	<?php endforeach;?>
 </table>
