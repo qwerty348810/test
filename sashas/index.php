@@ -5,6 +5,8 @@
 include_once 'header.phtml';
 /*HEADER*/
 
+include_once 'variables.php';
+
 $action="forum";
 
 if (isset($_GET['action']))
