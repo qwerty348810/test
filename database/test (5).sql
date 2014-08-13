@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Авг 13 2014 г., 04:53
+-- Время создания: Авг 13 2014 г., 07:26
 -- Версия сервера: 5.5.38-log
 -- Версия PHP: 5.3.28
 
@@ -19,35 +19,6 @@ SET time_zone = "+00:00";
 --
 -- База данных: `test`
 --
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `coment`
---
-
-CREATE TABLE IF NOT EXISTS `coment` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `text` text CHARACTER SET utf8mb4 NOT NULL,
-  `parent_id` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
-
---
--- Дамп данных таблицы `coment`
---
-
-INSERT INTO `coment` (`id`, `text`, `parent_id`) VALUES
-(1, '', 56),
-(2, '', 56),
-(3, '', 56),
-(4, '', 59),
-(5, 'qqqqqqqqqqqqqqqqq', 0),
-(6, 'aaaaaaaaaaaaaaaaa', 0),
-(7, 'cccccccccccccccccccccc', 56),
-(8, 'qazqazqaz', 58),
-(9, 'qwsxcdeqzxs', 57),
-(10, 'Hello', 56);
 
 -- --------------------------------------------------------
 
@@ -132,7 +103,7 @@ CREATE TABLE IF NOT EXISTS `messeges` (
   `messeges` varchar(250) NOT NULL,
   `parent_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=36 ;
 
 --
 -- Дамп данных таблицы `messeges`
@@ -141,7 +112,13 @@ CREATE TABLE IF NOT EXISTS `messeges` (
 INSERT INTO `messeges` (`id`, `messeges`, `parent_id`) VALUES
 (1, 'qwerty cool', 59),
 (2, 'Hello world', 60),
-(3, 'Error', 61);
+(3, 'Error', 61),
+(26, 'Hello world.I''m Dima.', 62),
+(27, 'Hello world.I''m Dima.', 62),
+(28, 'qwertyqwerty', 62),
+(33, 'Dima cool boy', 62),
+(34, 'Dima cool boy', 62),
+(35, 'cool boy is irly', 67);
 
 -- --------------------------------------------------------
 
@@ -220,7 +197,7 @@ CREATE TABLE IF NOT EXISTS `topic` (
   `title` varchar(50) NOT NULL,
   `parent_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=67 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=68 ;
 
 --
 -- Дамп данных таблицы `topic`
@@ -231,12 +208,13 @@ INSERT INTO `topic` (`id`, `title`, `parent_id`) VALUES
 (57, 'recruiting', 0),
 (58, 'discuss site', 0),
 (59, 'childreclam', 56),
-(60, 'тинchildrecruiting', 57),
+(60, 'childrecruiting', 57),
 (61, 'childdiscuss ', 58),
 (62, 'Hello', 56),
 (63, 'Cooooolll', 57),
 (64, 'Cooooolll', 57),
-(65, 'Delete', 58);
+(65, 'Delete', 58),
+(67, 'cool boy', 57);
 
 -- --------------------------------------------------------
 
