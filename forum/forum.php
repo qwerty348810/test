@@ -4,7 +4,7 @@
     $action="forum";
     $text="SPECIAL FORUMS";
     if($parent_id!="0"){
-        $action="messeges";
+        $action="topic";
         $text="TOPIC";
     }
     echo "<table class='general'>";
@@ -14,7 +14,7 @@
         }
     if ($action!="forum"){
             echo "<p>Title theme<Br><textarea name='texttopic' cols='25' rows='1' ></textarea></p>
-            <input type='hidden'  name='action' value='topic' />
+            <input type='hidden'  name='action' value='topic_send' />
             <input type='hidden'  name='parent_id' value='$parent_id' />
             <input class='b1' align='middle' type='submit' value='NEW TOPIC'/>";
     } 
