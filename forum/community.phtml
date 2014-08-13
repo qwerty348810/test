@@ -41,9 +41,8 @@ if (isset($_GET['action']) && file_exists($_GET['action'].".php")) {
 }elseif (isset($_GET['action']) && !file_exists($_GET['action'].".php")) {
 	include_once 'not_found.phtml';
 }else {
-	include_once 'variable_topic.php';
+	include_once 'topic.php';
 }
-print_r ($row['id']);
 ?>      
         </form>                 
     </body>
