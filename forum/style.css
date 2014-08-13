@@ -42,10 +42,10 @@
             -khtml-border-radius:10px;
         }
         .color{
-            background-color: #A58F77;
+            background-color: #F4A460;
         }
-        .colortopic{
-            background-color: #A58F77;
+        .color_forum{
+            background-color: #D2691E;
         }
         .left{
             text-align: left;
@@ -66,7 +66,11 @@
             padding-top: 220px;
         }
         .b1 {
-            background: #A58F77; 
+            background: #F4A460; 
             color: white;        
+        }
+        .b2 {
+            background:  #D2691E; 
+            color: white;
         }
         

@@ -5,10 +5,8 @@
         echo "<p>Write a message<Br><textarea name='messeges' cols='25' rows='3' ></textarea></p>
         <input type='hidden'  name='action' value='messegessend' />
         <input type='hidden'  name='parent_id' value='$parent_id' />
-        <input class='b1' align='middle' type='submit' value='NEW MESSEGE'/>";
+        <input class='b2' align='middle' type='submit' value='NEW MESSEGE'/>";
         while($row = mysql_fetch_assoc($result_messeges)) {
-            echo '<tr><td class="color">'.$row['messeges'].'</td></tr>';            
-        }
-        echo "</table>";
-               
+            echo '<tr><td class="color_forum">'.$row['messeges'].'</td></tr>';            
+        }                      
 ?>
