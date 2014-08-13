@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Авг 13 2014 г., 07:26
+-- Время создания: Авг 13 2014 г., 08:38
 -- Версия сервера: 5.5.38-log
 -- Версия PHP: 5.3.28
 
@@ -95,21 +95,21 @@ INSERT INTO `location` (`id`, `city`, `array_num`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `messeges`
+-- Структура таблицы `messages`
 --
 
-CREATE TABLE IF NOT EXISTS `messeges` (
+CREATE TABLE IF NOT EXISTS `messages` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `messeges` varchar(250) NOT NULL,
+  `messages` varchar(250) NOT NULL,
   `parent_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=36 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=40 ;
 
 --
--- Дамп данных таблицы `messeges`
+-- Дамп данных таблицы `messages`
 --
 
-INSERT INTO `messeges` (`id`, `messeges`, `parent_id`) VALUES
+INSERT INTO `messages` (`id`, `messages`, `parent_id`) VALUES
 (1, 'qwerty cool', 59),
 (2, 'Hello world', 60),
 (3, 'Error', 61),
@@ -118,7 +118,11 @@ INSERT INTO `messeges` (`id`, `messeges`, `parent_id`) VALUES
 (28, 'qwertyqwerty', 62),
 (33, 'Dima cool boy', 62),
 (34, 'Dima cool boy', 62),
-(35, 'cool boy is irly', 67);
+(35, 'cool boy is irly', 67),
+(36, 'i''m shure', 59),
+(37, 'Repear of soul', 62),
+(38, 'qwerty cool', 62),
+(39, 'i''m ring my bell', 70);
 
 -- --------------------------------------------------------
 
@@ -197,7 +201,7 @@ CREATE TABLE IF NOT EXISTS `topic` (
   `title` varchar(50) NOT NULL,
   `parent_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=68 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=71 ;
 
 --
 -- Дамп данных таблицы `topic`
@@ -214,7 +218,9 @@ INSERT INTO `topic` (`id`, `title`, `parent_id`) VALUES
 (63, 'Cooooolll', 57),
 (64, 'Cooooolll', 57),
 (65, 'Delete', 58),
-(67, 'cool boy', 57);
+(67, 'cool boy', 57),
+(68, 'Reclam TOP', 56),
+(70, 'Reclam tier', 56);
 
 -- --------------------------------------------------------
 
