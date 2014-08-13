@@ -8,5 +8,20 @@
 	<?php endforeach;?>
 </table>
 <?php else: ?>
-<center><h1>No messages</h1></center>
+<center>
+	<h1>No messages</h1>
+</center>
 <?php endif; ?>
+
+
+<table align="center" border="1">
+	<tr>
+		<td>
+			<form action="index.php?action=messages" method="post">
+				<input type="hidden" name="parent_id" value="<?php echo $parent_id;?>" />
+				<textarea name="message_text"></textarea>
+				<input type="submit" value ="Add" />
+			</form>
+		</td>
+	</tr>
+</table>
