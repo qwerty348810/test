@@ -26,24 +26,15 @@
         </table> 
         <form action="community.php" method="get" >
 <?php
-$action='';
-
-include_once 'variables.php';
-
-if (isset ($_GET['parent_id'])){
-    $parent_id=$_GET['parent_id'];
-}else {
-    $parent_id="0";
-}
 if (isset($_GET['action']) && file_exists($_GET['action'].".php")) {
 	$action=$_GET['action'];	 
 	include_once $action.'.php';
 }elseif (isset($_GET['action']) && !file_exists($_GET['action'].".php")) {
 	include_once 'not_found.phtml';
 }else {
-	include_once 'topic.php';
-}
-?>      
+	include_once 'forum.php';
+} 
+?>
         </form>                 
     </body>
 </html>    
