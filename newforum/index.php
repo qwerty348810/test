@@ -1,9 +1,9 @@
 <?php
 error_reporting(E_ALL);
-ini_set('display_reporting',1);
+ini_set('display_error',1);
 session_start();
 
-include_once 'template/header.phtm';
+include_once 'template/header.phtml';
 
 include_once 'variables.php';
 
@@ -15,6 +15,5 @@ if (isset($_GET['action'])){
 
 include_once $action.'.php';
 
-include_once 'template/foooter.phtml';
-
+include_once 'template/footer,phtml';
 ?>
