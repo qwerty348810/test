@@ -30,8 +30,7 @@
                     <a href="index.php">General Page</a>
                 </td>                
             </tr>
-        </table> 
-        <form action="community.php" method="get" >
+        </table>         
 <?php
 if (isset($_GET['action']) && file_exists($_GET['action'].".php")) {
 	$action=$_GET['action'];	 
@@ -41,7 +40,6 @@ if (isset($_GET['action']) && file_exists($_GET['action'].".php")) {
 }else {
 	include_once 'forum.php';
 } 
-?>
-        </form>                 
+?>                 
     </body>
 </html>    
