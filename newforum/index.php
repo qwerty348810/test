@@ -12,6 +12,7 @@ $action='forum';
 if(isset($_GET['action'])){
     $action=$_GET['action'];
 }
+
 include_once $action.'.php';
 
 include_once 'template/footer.phtml';
