@@ -1,6 +1,6 @@
 <?php
 
-class TV {
+class TV extends Electronics {
 	
 	
 }

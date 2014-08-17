@@ -1,5 +1,5 @@
 <?php
 
-class PC {
+class PC extends Electronics {
 	
 }
