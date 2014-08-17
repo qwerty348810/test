@@ -9,3 +9,4 @@ $pc=new PC();
 
 
 echo $electronics->getParameters();
+echo $tv->getParameters();
