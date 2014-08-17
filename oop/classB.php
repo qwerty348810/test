@@ -1,6 +1,6 @@
 <?php
 
-class Bclass {
+class TV {
 	
 	
 }
