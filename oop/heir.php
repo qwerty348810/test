@@ -17,3 +17,27 @@ $d->paren_funct();
 $d->child_funct();
 
 ?>
+<?php
+class A {
+    function testA(){
+        echo "тестим фунцию А";
+    }
+    function test(){
+        echo"просто тест А";
+    }
+}
+class B extends A{
+    function testB(){
+        echo "тестим функцию В";
+    }
+    function test(){
+        echo"просто тест В";
+    }
+}
+$object=new A();
+$object=new B();
+
+$object->test();//т В
+$object->testA();//ф А
+$object->testB();//ф В       
+?>
