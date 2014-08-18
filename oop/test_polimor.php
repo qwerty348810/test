@@ -15,6 +15,7 @@ class inc_test extends test {
 $a=new test();
 $b=new inc_test();
 $a->base();
+$a->base_test();
 $b->base_test();
 $b->base();
 
