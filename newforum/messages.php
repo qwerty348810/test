@@ -9,7 +9,7 @@ if(isset($_POST['parent_id'])){
     $messages_added="<center>Messages Added!Thanks</center>";
 }
 $parent_id=(isset($_GET['parent_id']) ? ($_GET['parent_id']): 0);
-$sql="SELECT * FROM messages WHERE parent_id=".$parent_id;
+$sql="SELECT * FROM messages WHERE parent_id='.$parent_id.'";
 $result=$db_connection->query($sql);
 $messages='forum';
 while ($row=mysql_fetch_assoc($result)){

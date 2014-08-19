@@ -1,7 +1,7 @@
 <?php
 $parent_id=(isset($_GET['parent_id']) ? ($_GET['parent_id']): 0);
-$sql="SELECT * FROM topic WHERE parent_id=".$parent;
-$result=mysql_query($sql,$mysql_con);
+$sql="SELECT * FROM topic WHERE parent_id='.$parent.'";
+$result=$db_connection->query($sql);
 
 $topics=array();
 while ($row=mysql_fetch_assoc($result)){

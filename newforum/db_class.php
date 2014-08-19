@@ -14,7 +14,7 @@ class database {
                 $db_password='dima123';                
             }           
             $this->link=mysql_connect($db_host,$db_username,$db_password) or die(mysql_error());
-            mysql_select_db($sql,$this->link) or die(mysql_error());
+            mysql_select_db($db_name) or die(mysql_error());
         }
     }
     public function save($sql){
