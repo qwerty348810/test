@@ -3,11 +3,11 @@
 <table>
     <?php foreach($message as $topic_val): ?>
     <tr>
-        <td><?php echo $topic_val['messages']; ?></td>
+        <td><?php echo $topic_val['messages'] ?></td>
     </tr>
     <?php endforeach; ?>
 </table>
-<?php else : ?>
+<?php else : print_r($message); echo $topic_val;?>
 <center>
     <h1>No Messages</h1>
 </center>

@@ -1,6 +1,6 @@
 <?php
 $parent_id=(isset($_GET['parent_id']) ? ($_GET['parent_id']): 0);
-$sql="SELECT * FROM topic WHERE parent_id='.$parent.'";
+$sql="SELECT * FROM topic WHERE parent_id=".$parent_id;
 $result=$db_connection->query($sql);
 
 $topics=array();
