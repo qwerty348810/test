@@ -13,8 +13,8 @@
 <?php endif; echo $parent_id; ?>
     <tr>
         <td>
-            <form action="index.php?action=messages" method="post">
-                <input type="hidden" name="parent_id" value="<?php echo $parent_id; ?>" />
+            <form action="index.php?action=messages&<?php echo 'parent_id'?>=<?php echo $parent_id; ?>" method="post">
+                <input type="hidden" name="parent_id" value='<?php echo $parent_id; ?>' />
                 <textarea name="messages_text"></textarea>
                 <input type="submit" value="add" />
             </form>
