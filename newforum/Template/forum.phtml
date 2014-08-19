@@ -1,7 +1,10 @@
-<table align="center" border="1">
+<table class='general'>
+    <tr>
+        <td class='color_forum'><?php echo $text; ?></td>
+    </tr>
     <?php foreach($topics as $topic_val): ?>
     <tr>
-        <td><a href="index.php?action=<?php echo $forum_topic;?>&parent_id=<?php echo $topic_val['id']; ?>"><?php echo $topic_val['title']; ?></a></td>
+        <td class='color'><a href="index.php?action=<?php echo $forum_topic;?>&parent_id=<?php echo $topic_val['id']; ?>"><?php echo $topic_val['title']; ?></a></td>
     </tr>
-    <?php endforeach; echo $forum_topic; echo $parent_id; print_r ($topics); ?>    
+    <?php endforeach; ?>
 </table>

@@ -1,0 +1,78 @@
+        body {         
+           
+        }        
+        .general {                 
+            width:52%;                       
+            padding: 33px;
+            margin-top: 5%;
+            text-align: center;
+            border: 10px;
+            margin-left: 24%;
+            color: azure;
+            
+        }
+        .parent {
+            width:22%;
+            border: 1px;
+            margin-right: 3%;
+            margin-top: 3%;
+            padding: 11px;
+            background: transparent;
+        }
+        .child {
+            width:33%;
+            border: 1px;
+            margin-left: 24.5%;
+            margin-top: 3%;
+            padding: 1px;
+            background: transparent;
+            color: azure;
+            font-size: 22px;
+            text-align: center;
+            height: 50px;
+        }
+	a { 
+    	text-decoration: none; 
+   	} 
+        a.menu {               
+            color:#fff !important;
+        }
+        td {
+            border-radius:6px; 
+            -webkit-border-radius:6px; 
+            -moz-border-radius:5px; 
+            -khtml-border-radius:10px;
+        }
+        .color{
+            background-color: #F4A460;
+        }
+        .color_forum{
+            background-color: #D2691E;
+        }
+        .left{
+            text-align: left;
+        }
+        .forum{
+            width: 954px;
+            height: 11px;
+            text-align: center;
+            padding: 33px;
+        }
+        .forumc{
+            width: 1800px;
+            height: 27px;
+            text-align: center;
+            padding: 33px;             
+        }
+        .register{
+            padding-top: 220px;
+        }
+        .b1 {
+            background: #F4A460; 
+            color: white;        
+        }
+        .b2 {
+            background:  #D2691E; 
+            color: white;
+        }
+        

@@ -3,16 +3,16 @@
 <table align="center" border="1">
     <?php foreach($message as $topic_val): ?>
     <tr>
-        <td><?php echo $topic_val['messages'] ?></td>
+        <td class='color'><?php echo $topic_val['messages'] ?></td>
     </tr>
     <?php endforeach; ?>
 <?php else : print_r($message); echo $topic_val;?>
 <center>
     <h1>No Messages</h1>
 </center>
-<?php endif; echo $parent_id; ?>
+<?php endif; ?>
     <tr>
-        <td>
+        <td class='color'>
             <form action="index.php?action=messages&<?php echo 'parent_id'?>=<?php echo $parent_id; ?>" method="post">
                 <input type="hidden" name="parent_id" value='<?php echo $parent_id; ?>' />
                 <textarea name="messages_text"></textarea>
