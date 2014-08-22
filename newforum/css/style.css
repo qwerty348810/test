@@ -1,5 +1,5 @@
         body {         
-           
+           background-image:   url('http://sfw.so/uploads/posts/2013-03/1363697727_besthdwallpaperspack861_12.jpg');
         }        
         .general {                 
             width:52%;                       
@@ -31,7 +31,8 @@
             text-align: center;
             height: 50px;
         }
-	a { 
+	a {
+        color: black;
     	text-decoration: none; 
    	} 
         a.menu {               

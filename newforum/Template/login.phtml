@@ -1,0 +1,37 @@
+
+<form action="index.php" method="get" name="form">	
+	<input type="hidden"  name="action" value="query_base" />
+	<div align="center">
+		<div>
+		    <h3>Email:<input type="text" size="20" id="email2" name="email" maxlength="20" required placeholder="Email" /></h3>
+                </div>
+		<div>
+                    <h3>Password:<input type="text" size="20" id="password" name="password" maxlength="20" required placeholder="Password"/></h3>
+                </div>
+	</div>
+	<div align="center">
+		<div>
+                    <input name="submit" type="hidden" value="1" /><input align="middle" id="js_button" type="submit" name="enter" value="Login" />
+                    <a href="index.php?action=register">Registration</a>
+                </div>
+	</div>
+</form>
+<script type="text/javascript">
+            $( document ).ready(function() {
+                $( "#js_button" ).click(function() {
+                    var lname=$('#password').val();
+                    if (lname.length<1) {
+                            alert("please fill password field");
+                            jQuery("#password").css("background-color", "red");
+                    }
+                 });
+ 
+             $( "#js_button" ).click(function() {
+                    var lname=$('#email2').val();
+                    if (lname.length<1) {
+                            alert("please fill email field");
+                            jQuery("#email2").css("background-color", "red");
+                    }
+                 });
+            }); 
+</script>

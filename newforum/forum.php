@@ -8,7 +8,7 @@ while ($row=mysql_fetch_assoc($result)){
     array_push($topics,$row);
 }
 $forum_topic='forum';
-$text='FORUM';
+$text='SPECIAL FORUMS';
 if($parent_id){
     $forum_topic='messages';
     $text='TOPIC';
