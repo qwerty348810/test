@@ -15,5 +15,6 @@
         if ($strSql){
             echo "Thank you for registering!!!!";            
         }
+      echo $email,$password,$name,$lname,$nname,$dmy,$sex,$loc;  
     mysql_close();
 ?>               
