@@ -25,4 +25,12 @@ class database {
         return $result;
     }
 }
+class connect {
+    public function connectfunction() {
+        mysql_connect(localhost,root,'') or die(mysql_error());       
+    }
+    public function selectfunction() {
+    mysql_select_db(test) or die(mysql_error());
+    }
+}
 ?>
