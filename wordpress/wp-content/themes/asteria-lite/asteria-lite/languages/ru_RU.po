@@ -1,0 +1,1299 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Asteria Lite v0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2013-12-11 11:53:10+0000\n"
+"Last-Translator: admin <dyba03@yandex.ua>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-Country: RUSSIA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:6
+#@ asteria
+msgid "Page Not Found"
+msgstr "Ничего не найдено"
+
+#: 404.php:15
+#@ asteria
+msgid "Server cannot find the file you requested. File has either been moved or deleted, or you entered the wrong URL or document name. Look at the URL. If a word looks misspelled, then correct it and try it again. If that doesnt work You can try our search option to find what you are looking for."
+msgstr "К сожалению, ничего не найдено."
+
+#: asteria-config.php:22
+#@ asteria
+msgid "A Section added by hook"
+msgstr "Секция добавлена в хуки"
+
+#: asteria-config.php:23
+#@ asteria
+msgid "<p class=\"description\">This is a section created by adding a filter to the sections array. Can be used by child themes to add/remove sections from the options.</p>"
+msgstr "<p class=\"description\">Эту секцию можно удалить через настройки темы</p>"
+
+#: asteria-config.php:72
+#, php-format
+#@ asteria
+msgid "Customize &#8220;%s&#8221;"
+msgstr "Настроить &#8220;%s&#8221;"
+
+#: asteria-config.php:79
+#: asteria-config.php:82
+#@ default
+msgid "Current theme preview"
+msgstr ""
+
+#: asteria-config.php:91
+#, php-format
+#@ asteria
+msgid "By %s"
+msgstr ""
+
+#: asteria-config.php:92
+#, php-format
+#@ asteria
+msgid "Version %s"
+msgstr ""
+
+#: asteria-config.php:93
+#@ asteria
+msgid "Tags"
+msgstr "Метки"
+
+#: asteria-config.php:97
+#, php-format
+#@ default
+msgid "This <a href=\"%1$s\">child theme</a> requires its parent theme, %2$s."
+msgstr ""
+
+#: asteria-config.php:98
+#@ asteria
+msgid "http://codex.wordpress.org/Child_Themes"
+msgstr ""
+
+#: asteria-config.php:227
+#@ asteria
+msgid "Asteria Options"
+msgstr "Настройки"
+
+#: asteria-config.php:231
+#: redux/framework.php:109
+#: redux/framework.php:115
+#: redux/framework.php:255
+#: redux/framework.php:257
+#@ asteria
+#@ redux-framework
+msgid "Options"
+msgstr "Настройки"
+
+#: asteria-config.php:273
+#@ asteria
+msgid "Theme Information 1"
+msgstr ""
+
+#: asteria-config.php:274
+#: asteria-config.php:279
+#@ asteria
+msgid "<p>This is the tab content, HTML is allowed.</p>"
+msgstr ""
+
+#: asteria-config.php:278
+#@ asteria
+msgid "Theme Information 2"
+msgstr ""
+
+#: asteria-config.php:283
+#@ asteria
+msgid "<p>This is the sidebar content, HTML is allowed.</p>"
+msgstr ""
+
+#: asteria-config.php:293
+#@ asteria
+msgid "<p><strong>Upgrade to Asteria PRO</strong> to Unlock all features and design your site anyway you want. For Documentation you can either click the Documentation tab or <a target=\"_blank\" href=\"http://bit.ly/HXxREO\">Download This PDF.</a></p>"
+msgstr "&nbsp;"
+
+#: asteria-config.php:295
+#@ asteria
+msgid "<p>This text is displayed above the options panel. It isn't required, but more info is always better! The intro_text field accepts all HTML.</p>"
+msgstr ""
+
+#: asteria-config.php:330
+#@ asteria
+msgid "Basic"
+msgstr "Основное"
+
+#: asteria-config.php:342
+#@ asteria
+msgid "Site Width"
+msgstr "Ширина сайта"
+
+#: asteria-config.php:343
+#@ asteria
+msgid "Select between Fixed Width and Full Width"
+msgstr "Выберите между фиксированной шириной или полноразмерным экраном"
+
+#: asteria-config.php:354
+#@ asteria
+msgid "Header Type"
+msgstr "Тип шапки"
+
+#: asteria-config.php:356
+#@ asteria
+msgid "Change how the header looks"
+msgstr "&nbsp;"
+
+#: asteria-config.php:364
+#@ asteria
+msgid "Page Header Type"
+msgstr "Тип страницы шапки"
+
+#: asteria-config.php:366
+#@ asteria
+msgid "Change how the Page Title Looks"
+msgstr "&nbsp;"
+
+#: asteria-config.php:374
+#@ asteria
+msgid "Ajax Pagination"
+msgstr "Ajax навигация"
+
+#: asteria-config.php:375
+#@ asteria
+msgid "Ajax pagination(Go to next page without reloading the page"
+msgstr "Навигация без перезагрузки страницы"
+
+#: asteria-config.php:382
+#@ asteria
+msgid "To Top Button"
+msgstr "Кнопка Наверх"
+
+#: asteria-config.php:383
+#@ asteria
+msgid "Turn On/Off \"To Top Button\"(The button that appears on bottom right when you scroll down to pages."
+msgstr "&nbsp;"
+
+#: asteria-config.php:390
+#@ asteria
+msgid "Footer Copyright Text"
+msgstr "Копирайт в футере"
+
+#: asteria-config.php:406
+#@ asteria
+msgid "Front Page "
+msgstr "Главная страница"
+
+#: asteria-config.php:411
+#@ asteria
+msgid "Block 1 Title"
+msgstr "Block 1 Заголовок"
+
+#: asteria-config.php:418
+#@ asteria
+msgid "Block 1 Icon"
+msgstr "Block 1 Иконка"
+
+#: asteria-config.php:426
+#: asteria-config.php:448
+#@ asteria
+msgid "Block 1 Content"
+msgstr "Block 1 Контент"
+
+#: asteria-config.php:433
+#@ asteria
+msgid "Block 2 Title"
+msgstr "Block 2 Заголовок"
+
+#: asteria-config.php:440
+#@ asteria
+msgid "Block 2 Icon"
+msgstr "Block 2 Иконка"
+
+#: asteria-config.php:455
+#@ asteria
+msgid "Block 3 Title"
+msgstr "Block 3 Заголовок"
+
+#: asteria-config.php:462
+#@ asteria
+msgid "Block 3 Icon"
+msgstr "Block 3 Иконка"
+
+#: asteria-config.php:470
+#@ asteria
+msgid "Block 3 Content"
+msgstr "Block 3 Контент"
+
+#: asteria-config.php:477
+#@ asteria
+msgid "Block 4 Title"
+msgstr "Block 4 Заголовок"
+
+#: asteria-config.php:484
+#@ asteria
+msgid "Block 4 Icon"
+msgstr "Block 4 Иконка"
+
+#: asteria-config.php:492
+#@ asteria
+msgid "Block 4 Content"
+msgstr "Block 4 Контент"
+
+#: asteria-config.php:499
+#@ asteria
+msgid "Welcome Text"
+msgstr "Текст приветствия"
+
+#: asteria-config.php:506
+#@ asteria
+msgid "Background Color "
+msgstr "Цвет фона "
+
+#: asteria-config.php:513
+#@ asteria
+msgid "Title &amp; Description"
+msgstr "Заголовок &amp; Описание"
+
+#: asteria-config.php:521
+#@ asteria
+msgid "Posts layout"
+msgstr "Структура записей"
+
+#: asteria-config.php:531
+#@ asteria
+msgid "Display posts from a Category"
+msgstr "Показывать записи из рубрик"
+
+#: asteria-config.php:540
+#@ asteria
+msgid "Category Name"
+msgstr "Имя рубрики"
+
+#: asteria-config.php:546
+#@ asteria
+msgid "Number of Posts "
+msgstr "Кол-во записей "
+
+#: asteria-config.php:553
+#: asteria-config.php:559
+#: asteria-config.php:565
+#@ asteria
+msgid "This feature is only available in Asteria PRO"
+msgstr "&nbsp;"
+
+#: asteria-config.php:573
+#@ asteria
+msgid "Frontpage Elements position"
+msgstr "Расположение элементов на главной"
+
+#: asteria-config.php:574
+#@ asteria
+msgid "Drag and Drop each element to reorder their position."
+msgstr "Перетащите мышкой на нужное место"
+
+#: asteria-config.php:594
+#@ asteria
+msgid "Slider"
+msgstr "Слайдер"
+
+#: asteria-config.php:600
+#@ asteria
+msgid "Slider Type"
+msgstr "Тип слайдера"
+
+#: asteria-config.php:607
+#@ asteria
+msgid "Pause Time Between Each Slide "
+msgstr "Пауза между слайдами"
+
+#: asteria-config.php:614
+#@ asteria
+msgid "Slider Height "
+msgstr "Высота слайдера"
+
+#: asteria-config.php:620
+#@ asteria
+msgid "Slide Font Style"
+msgstr "Шрифт слайдера"
+
+#: asteria-config.php:649
+#: redux/inc/fields/typography/field_typography.php:176
+#@ asteria
+#@ redux-framework
+msgid "Style"
+msgstr "Стиль"
+
+#: asteria-config.php:656
+#: functions.php:401
+#@ asteria
+msgid "Secondary Element background Color"
+msgstr "Цвет фона"
+
+#: asteria-config.php:672
+#: functions.php:414
+#@ asteria
+msgid "Site wide Text Color"
+msgstr "Цвет текста"
+
+#: asteria-config.php:680
+#: functions.php:420
+#@ asteria
+msgid "Text Color on secondary elements"
+msgstr "Цвет текста вторичных элементов"
+
+#: asteria-config.php:689
+#: functions.php:426
+#@ asteria
+msgid "\"Leave a Reply\" Text Color"
+msgstr "Цвет текста: комментировать"
+
+#: asteria-config.php:698
+#@ asteria
+msgid "Rounded Corners"
+msgstr "Закругленные углы"
+
+#: asteria-config.php:704
+#@ asteria
+msgid "Drop Shadow"
+msgstr "Использовать тени"
+
+#: asteria-config.php:710
+#@ asteria
+msgid "More Styling Options are only available in Asteria PRO"
+msgstr "&nbsp;"
+
+#: asteria-config.php:718
+#@ asteria
+msgid "Typography Settings"
+msgstr "Шрифты"
+
+#: asteria-config.php:723
+#@ asteria
+msgid "Logo Style"
+msgstr "Стиль лого"
+
+#: asteria-config.php:724
+#@ asteria
+msgid "Specify the body font properties."
+msgstr "Специфический шрифт"
+
+#: asteria-config.php:738
+#@ asteria
+msgid "More Typography Options are only available in Asteria PRO"
+msgstr "&nbsp;"
+
+#: asteria-config.php:748
+#@ asteria
+msgid "Social"
+msgstr "Соц.сети"
+
+#: asteria-config.php:753
+#@ asteria
+msgid "Social Share Icons under Posts "
+msgstr "Кнопки Поделиться после записи"
+
+#: asteria-config.php:759
+#@ asteria
+msgid "Social Share Icons Color "
+msgstr "Цвет кнопок Поделиться"
+
+#: asteria-config.php:773
+#@ asteria
+msgid "Facebook URL "
+msgstr ""
+
+#: asteria-config.php:779
+#@ asteria
+msgid "Twitter URL "
+msgstr ""
+
+#: asteria-config.php:785
+#@ asteria
+msgid "Google Plus URL "
+msgstr ""
+
+#: asteria-config.php:791
+#@ asteria
+msgid "Youtube URL "
+msgstr ""
+
+#: asteria-config.php:798
+#@ asteria
+msgid "Flickr URL "
+msgstr ""
+
+#: asteria-config.php:804
+#@ asteria
+msgid "Linkedin URL "
+msgstr ""
+
+#: asteria-config.php:810
+#@ asteria
+msgid "Pinterest URL "
+msgstr ""
+
+#: asteria-config.php:816
+#@ asteria
+msgid "Tumblr URL "
+msgstr ""
+
+#: asteria-config.php:822
+#@ asteria
+msgid "Instagram URL "
+msgstr ""
+
+#: asteria-config.php:828
+#@ asteria
+msgid "RSS URL "
+msgstr ""
+
+#: asteria-config.php:838
+#@ asteria
+msgid "Miscellaneous Settings"
+msgstr "Отображение записей"
+
+#: asteria-config.php:844
+#@ asteria
+msgid "Category, Archive Page posts layout"
+msgstr "Структура рубрик, архивов"
+
+#: asteria-config.php:853
+#@ asteria
+msgid "Show Post Info - Date, Author Name, Categories etc.."
+msgstr "Показывать дату, имя автора, рубрику и т.д."
+
+#: asteria-config.php:859
+#@ asteria
+msgid "Show Next and Previous Posts"
+msgstr "Показывать ссылки на следущую и предыдущую запись"
+
+#: asteria-config.php:865
+#@ asteria
+msgid "Show Comments"
+msgstr "Показывать комментарии"
+
+#: asteria-config.php:871
+#@ asteria
+msgid "Lightbox Feature"
+msgstr ""
+
+#: asteria-config.php:878
+#@ asteria
+msgid "Beautify My Galleries"
+msgstr ""
+
+#: asteria-config.php:886
+#@ asteria
+msgid "Display Blog Posts from a selected Category"
+msgstr "Показывать записи из определенной категории"
+
+#: asteria-config.php:887
+#@ asteria
+msgid "If you have setup a Blog page with Blog Page Template, choose a category to get the posts from"
+msgstr "&nbsp;"
+
+#: asteria-config.php:895
+#@ asteria
+msgid "Mobile Layout"
+msgstr "Мобильная структура"
+
+#: asteria-config.php:896
+#@ asteria
+msgid "Checking each of these below option will only hide these elements from the Mobile layout."
+msgstr "Так будет отображаться сайт на смартфонах и планшетах."
+
+#: asteria-config.php:901
+#@ asteria
+msgid "Hide Slider"
+msgstr "Скрыть слайдер"
+
+#: asteria-config.php:908
+#@ asteria
+msgid "Hide Front Page Blocks"
+msgstr "Скрыть блоки на главной"
+
+#: asteria-config.php:915
+#@ asteria
+msgid "Hide Front Page Welcome Text"
+msgstr "Скрыть текст приветствия"
+
+#: asteria-config.php:922
+#@ asteria
+msgid "Hide Front Page Posts"
+msgstr "Скрыть записи"
+
+#: asteria-config.php:929
+#@ asteria
+msgid "Hide Footer Widgets"
+msgstr "Скрыть виджеты в футере"
+
+#: asteria-config.php:936
+#@ asteria
+msgid "Hide Right Sidebar"
+msgstr "Скрыть правый сайдбар"
+
+#: asteria-config.php:947
+#@ asteria
+msgid "Custom CSS"
+msgstr "Свой CSS"
+
+#: asteria-config.php:948
+#@ asteria
+msgid "Write your custom css here"
+msgstr "Введите свой код"
+
+#: asteria-config.php:962
+#: asteria-config.php:967
+#@ asteria
+msgid "Maintenance Mode"
+msgstr "Сайт в разработке"
+
+#: asteria-config.php:973
+#@ asteria
+msgid "Date "
+msgstr "Дата"
+
+#: asteria-config.php:974
+#@ asteria
+msgid "Site will be online on"
+msgstr "Сайт будет запущен - "
+
+#: asteria-config.php:986
+#@ asteria
+msgid "Title "
+msgstr "Заголвок"
+
+#: asteria-config.php:992
+#@ asteria
+msgid "Message "
+msgstr "Сообщение"
+
+#: asteria-config.php:1006
+#@ asteria
+msgid "About The Theme"
+msgstr ""
+
+#: asteria-config.php:1021
+#@ asteria
+msgid "Upgrade to PRO"
+msgstr ""
+
+#: asteria-config.php:1036
+#@ asteria
+msgid "Documentation"
+msgstr ""
+
+#: author.php:26
+#@ asteria
+msgid "Posts by "
+msgstr "Автор "
+
+#: author.php:56
+#: layout4.php:40
+#: page-blog.php:73
+#: single.php:32
+#@ asteria
+msgid "0 Comment"
+msgstr "Нет комментариев"
+
+#: author.php:56
+#: layout4.php:40
+#: page-blog.php:73
+#: single.php:32
+#@ asteria
+msgid "1 Comment"
+msgstr "Один комментарий"
+
+#: author.php:56
+#: layout4.php:40
+#: page-blog.php:73
+#: single.php:32
+#@ asteria
+msgid "% Comments"
+msgstr "Комментариев: %"
+
+#: author.php:56
+#: layout4.php:40
+#: page-blog.php:73
+#: single.php:32
+#@ asteria
+msgid "Off"
+msgstr "Выкл"
+
+#: comments.php:4
+#@ asteria
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Запаролено."
+
+#: comments.php:15
+#@ asteria
+msgid "No Responses"
+msgstr "Нет комментариев"
+
+#: comments.php:15
+#@ asteria
+msgid "One Response"
+msgstr "Один комментарий"
+
+#: comments.php:15
+#@ asteria
+msgid "% Responses"
+msgstr "Комментариев: %"
+
+#: comments.php:29
+#@ asteria
+msgid "Trackbacks &amp; Pings"
+msgstr "Трекбеки и пинги"
+
+#: comments.php:51
+#@ asteria
+msgid "Comments are closed."
+msgstr "Комментарии закрыты."
+
+#: comments.php:62
+#: functions.php:235
+#@ asteria
+msgid "Leave a Reply"
+msgstr "Комментировать"
+
+#: comments.php:66
+#: functions.php:239
+#@ asteria
+msgid "Name"
+msgstr "Имя"
+
+#: comments.php:68
+#: functions.php:241
+#@ asteria
+msgid "Email"
+msgstr "Почта"
+
+#: comments.php:70
+#: functions.php:243
+#@ asteria
+msgid "Website"
+msgstr "Сайт"
+
+#: footer.php:33
+#@ asteria
+msgid "Theme by"
+msgstr ""
+
+#: functions.php:38
+#, php-format
+#@ asteria
+msgid "Page %s"
+msgstr "Страница %s"
+
+#: functions.php:95
+#: functions.php:97
+#@ asteria
+msgid "Right Sidebar"
+msgstr "Правый сайдбар"
+
+#: functions.php:105
+#@ asteria
+msgid "Footer Widgets"
+msgstr "Виджеты в футере"
+
+#: functions.php:107
+#@ asteria
+msgid "Widget Area for the Footer"
+msgstr "Секция виджета в футере"
+
+#: functions.php:164
+#@ asteria
+msgid "Search...."
+msgstr "Поиск..."
+
+#: functions.php:165
+#@ asteria
+msgid "Search"
+msgstr "Поиск"
+
+#: functions.php:185
+#, php-format
+#@ asteria
+msgid "%s"
+msgstr ""
+
+#: functions.php:185
+#@ asteria
+msgid "says:"
+msgstr "пишет:"
+
+#: functions.php:188
+#: functions.php:213
+#@ asteria
+msgid "Your comment is awaiting moderation."
+msgstr "Комментарий ожидает проверки."
+
+#: functions.php:197
+#: functions.php:222
+#@ asteria
+msgid "Edit"
+msgstr "Изменить"
+
+#: functions.php:218
+#, php-format
+#@ default
+msgid "<cite class=\"citeping\">%s</cite> <span class=\"says\">:</span>"
+msgstr ""
+
+#: functions.php:294
+#@ asteria
+msgid "Header Navigation"
+msgstr "Навигация в шапке"
+
+#: functions.php:407
+#@ asteria
+msgid "Header Background Color"
+msgstr "Цвет фона в шапке"
+
+#: head4.php:17
+#@ asteria
+msgid "Menu"
+msgstr "Меню"
+
+#: header.php:19
+#@ asteria
+msgid "The Website is running in Maintenance Mode."
+msgstr "Сайт работает в режиме \\\"Сайт в разработке\\\""
+
+#: page-fullwidth.php:25
+#: page-leftsidebar.php:26
+#: page.php:20
+#: single.php:18
+#@ asteria
+msgid "Edit This"
+msgstr "Изменить"
+
+#: page-fullwidth.php:31
+#: page-leftsidebar.php:32
+#: page.php:27
+#: single.php:42
+#@ default
+msgid "Pages:"
+msgstr ""
+
+#: redux/extensions/customizer/extension_customizer.php:311
+#: redux/extensions/customizer/extension_customizer.php:342
+#: redux/framework.php:1019
+#@ redux-framework
+msgid "You have changes that are not saved. Would you like to save them now?"
+msgstr ""
+
+#: redux/extensions/customizer/extension_customizer.php:312
+#: redux/extensions/customizer/extension_customizer.php:343
+#: redux/framework.php:1020
+#@ redux-framework
+msgid "Are you sure? Resetting will loose all custom values."
+msgstr ""
+
+#: redux/extensions/customizer/extension_customizer.php:313
+#: redux/extensions/customizer/extension_customizer.php:344
+#: redux/framework.php:1021
+#@ redux-framework
+msgid "Your current options will be replaced with the values of this preset. Would you like to proceed?"
+msgstr ""
+
+#: redux/framework.php:815
+#: redux/framework.php:816
+#: redux/framework.php:1682
+#@ redux-framework
+msgid "Import / Export"
+msgstr ""
+
+#: redux/framework.php:837
+#: redux/framework.php:838
+#: redux/framework.php:1712
+#: redux/framework.php:1819
+#@ redux-framework
+msgid "Options Object"
+msgstr ""
+
+#: redux/framework.php:848
+#: redux/framework.php:849
+#: redux/framework.php:1726
+#: redux/framework.php:1839
+#@ redux-framework
+msgid "System Info"
+msgstr ""
+
+#: redux/framework.php:1287
+#@ redux-framework
+msgid "Default"
+msgstr ""
+
+#: redux/framework.php:1556
+#@ redux-framework
+msgid "Warning- This options panel will not work properly without javascript!"
+msgstr ""
+
+#: redux/framework.php:1609
+#@ redux-framework
+msgid "Expand"
+msgstr ""
+
+#: redux/framework.php:1611
+#: redux/framework.php:1868
+#@ redux-framework
+msgid "Save Changes"
+msgstr ""
+
+#: redux/framework.php:1613
+#: redux/framework.php:1870
+#@ redux-framework
+msgid "Reset to Defaults"
+msgstr ""
+
+#: redux/framework.php:1616
+#: redux/framework.php:1873
+#@ redux-framework
+msgid "Working..."
+msgstr ""
+
+#: redux/framework.php:1623
+#@ redux-framework
+msgid "Settings Imported!"
+msgstr ""
+
+#: redux/framework.php:1625
+#@ redux-framework
+msgid "Settings Saved!"
+msgstr ""
+
+#: redux/framework.php:1629
+#@ redux-framework
+msgid "Settings have changed, you should save them!"
+msgstr ""
+
+#: redux/framework.php:1630
+#@ redux-framework
+msgid "error(s) were found!"
+msgstr ""
+
+#: redux/framework.php:1631
+#@ redux-framework
+msgid "warning(s) were found!"
+msgstr ""
+
+#: redux/framework.php:1763
+#@ redux-framework
+msgid "Import / Export Options"
+msgstr ""
+
+#: redux/framework.php:1764
+#@ redux-framework
+msgid "Import Options"
+msgstr ""
+
+#: redux/framework.php:1765
+#@ redux-framework
+msgid "Import from file"
+msgstr ""
+
+#: redux/framework.php:1765
+#@ redux-framework
+msgid "Import from URL"
+msgstr ""
+
+#: redux/framework.php:1770
+#@ redux-framework
+msgid "Input your backup file below and hit Import to restore your sites options from a backup."
+msgstr ""
+
+#: redux/framework.php:1780
+#@ redux-framework
+msgid "Input the URL to another sites options set and hit Import to load the options from that site."
+msgstr ""
+
+#: redux/framework.php:1787
+#@ redux-framework
+msgid "Import"
+msgstr ""
+
+#: redux/framework.php:1787
+#@ redux-framework
+msgid "WARNING! This will overwrite all existing option values, please proceed with caution!"
+msgstr ""
+
+#: redux/framework.php:1790
+#@ redux-framework
+msgid "Export Options"
+msgstr ""
+
+#: redux/framework.php:1792
+#@ redux-framework
+msgid "Here you can copy/download your current option settings. Keep this safe as you can use it as a backup should anything go wrong, or you can use it to restore your settings on this site (or any other site)."
+msgstr ""
+
+#: redux/framework.php:1796
+#@ redux-framework
+msgid "Copy"
+msgstr ""
+
+#: redux/framework.php:1796
+#@ redux-framework
+msgid "Download"
+msgstr ""
+
+#: redux/framework.php:1796
+#@ redux-framework
+msgid "Copy Link"
+msgstr ""
+
+#: redux/framework.php:1828
+#@ redux-framework
+msgid "Show Object in Javascript Console Object"
+msgstr ""
+
+#: redux/inc/fields/border/field_border.php:102
+#@ redux-framework
+msgid "Border size"
+msgstr ""
+
+#: redux/inc/fields/border/field_border.php:110
+#@ redux-framework
+msgid "Border style"
+msgstr ""
+
+#: redux/inc/fields/color/field_color.php:72
+#: redux/inc/fields/color_gradient/field_color_gradient.php:81
+#: redux/inc/fields/color_gradient/field_color_gradient.php:91
+#@ redux-framework
+msgid "Transparent"
+msgstr ""
+
+#: redux/inc/fields/color_gradient/field_color_gradient.php:73
+#@ redux-framework
+msgid "From "
+msgstr ""
+
+#: redux/inc/fields/color_gradient/field_color_gradient.php:84
+#@ redux-framework
+msgid "To "
+msgstr ""
+
+#: redux/inc/fields/dimensions/field_dimensions.php:85
+#@ redux-framework
+msgid "Width"
+msgstr ""
+
+#: redux/inc/fields/dimensions/field_dimensions.php:101
+#@ redux-framework
+msgid "height"
+msgstr ""
+
+#: redux/inc/fields/dimensions/field_dimensions.php:111
+#: redux/inc/fields/dimensions/field_dimensions.php:112
+#: redux/inc/fields/spacing/field_spacing.php:151
+#: redux/inc/fields/spacing/field_spacing.php:152
+#@ redux-framework
+msgid "Units"
+msgstr ""
+
+#: redux/inc/fields/gallery/field_gallery.php:76
+#@ redux-framework
+msgid "Add/Edit Gallery"
+msgstr ""
+
+#: redux/inc/fields/gallery/field_gallery.php:77
+#@ redux-framework
+msgid "Clear Gallery"
+msgstr ""
+
+#: redux/inc/fields/group/field_group.php:71
+#@ redux-framework
+msgid "New"
+msgstr ""
+
+#: redux/inc/fields/group/field_group.php:126
+#@ redux-framework
+msgid "Delete"
+msgstr ""
+
+#: redux/inc/fields/group/field_group.php:131
+#@ redux-framework
+msgid "Add"
+msgstr ""
+
+#: redux/inc/fields/link_color/field_link_color.php:84
+#@ redux-framework
+msgid "Regular"
+msgstr ""
+
+#: redux/inc/fields/link_color/field_link_color.php:90
+#@ redux-framework
+msgid "Hover"
+msgstr ""
+
+#: redux/inc/fields/link_color/field_link_color.php:96
+#@ redux-framework
+msgid "Active"
+msgstr ""
+
+#: redux/inc/fields/media/field_media.php:112
+#@ redux-framework
+msgid "None media selected"
+msgstr ""
+
+#: redux/inc/fields/media/field_media.php:144
+#: redux/inc/fields/slides/field_slides.php:113
+#: redux/inc/fields/slides/field_slides.php:158
+#@ redux-framework
+msgid "Upload"
+msgstr ""
+
+#: redux/inc/fields/media/field_media.php:150
+#: redux/inc/fields/multi_text/field_multi_text.php:74
+#: redux/inc/fields/multi_text/field_multi_text.php:77
+#: redux/inc/fields/multi_text/field_multi_text.php:80
+#: redux/inc/fields/slides/field_slides.php:119
+#: redux/inc/fields/slides/field_slides.php:160
+#@ redux-framework
+msgid "Remove"
+msgstr ""
+
+#: redux/inc/fields/multi_text/field_multi_text.php:52
+#@ redux-framework
+msgid "Add More"
+msgstr ""
+
+#: redux/inc/fields/password/field_password.php:29
+#@ redux-framework
+msgid "Password"
+msgstr ""
+
+#: redux/inc/fields/password/field_password.php:29
+#@ redux-framework
+msgid "Username"
+msgstr ""
+
+#: redux/inc/fields/select/field_select.php:67
+#@ redux-framework
+msgid "Select an item"
+msgstr ""
+
+#: redux/inc/fields/select/field_select.php:87
+#@ redux-framework
+msgid "No items of this type were found."
+msgstr ""
+
+#: redux/inc/fields/slides/field_slides.php:125
+#: redux/inc/fields/slides/field_slides.php:166
+#@ redux-framework
+msgid "Description"
+msgstr ""
+
+#: redux/inc/fields/slides/field_slides.php:128
+#: redux/inc/fields/slides/field_slides.php:169
+#@ redux-framework
+msgid "Slide Text Layout"
+msgstr ""
+
+#: redux/inc/fields/slides/field_slides.php:136
+#: redux/inc/fields/slides/field_slides.php:177
+#@ redux-framework
+msgid "Delete Slide"
+msgstr ""
+
+#: redux/inc/fields/slides/field_slides.php:165
+#@ redux-framework
+msgid "Title"
+msgstr ""
+
+#: redux/inc/fields/slides/field_slides.php:167
+#@ redux-framework
+msgid "URL"
+msgstr ""
+
+#: redux/inc/fields/slides/field_slides.php:180
+#@ redux-framework
+msgid "Add Slide"
+msgstr ""
+
+#: redux/inc/fields/spacing/field_spacing.php:105
+#@ redux-framework
+msgid "Top"
+msgstr ""
+
+#: redux/inc/fields/spacing/field_spacing.php:116
+#@ redux-framework
+msgid "Right"
+msgstr ""
+
+#: redux/inc/fields/spacing/field_spacing.php:130
+#@ redux-framework
+msgid "Bottom"
+msgstr ""
+
+#: redux/inc/fields/spacing/field_spacing.php:141
+#@ redux-framework
+msgid "Left"
+msgstr ""
+
+#: redux/inc/fields/typography/field_typography.php:104
+#@ redux-framework
+msgid "Font family"
+msgstr ""
+
+#: redux/inc/fields/typography/field_typography.php:107
+#@ redux-framework
+msgid "Standard Fonts"
+msgstr ""
+
+#: redux/inc/fields/typography/field_typography.php:172
+#: redux/inc/fields/typography/field_typography.php:176
+#@ redux-framework
+msgid "Font style"
+msgstr ""
+
+#: redux/inc/fields/typography/field_typography.php:202
+#@ redux-framework
+msgid "Font subsets"
+msgstr ""
+
+#: redux/inc/fields/typography/field_typography.php:203
+#@ redux-framework
+msgid "Subsets"
+msgstr ""
+
+#: redux/inc/fields/typography/field_typography.php:203
+#@ redux-framework
+msgid "Font script"
+msgstr ""
+
+#: redux/inc/fields/typography/field_typography.php:221
+#@ redux-framework
+msgid "Size"
+msgstr ""
+
+#: redux/inc/fields/typography/field_typography.php:230
+#@ redux-framework
+msgid "Height"
+msgstr ""
+
+#: redux/inc/fields/typography/field_typography.php:238
+#@ redux-framework
+msgid "Word Spacing"
+msgstr ""
+
+#: redux/inc/fields/typography/field_typography.php:246
+#@ redux-framework
+msgid "Letter Spacing"
+msgstr ""
+
+#: redux/inc/fields/typography/field_typography.php:260
+#@ redux-framework
+msgid "Backup Font Family"
+msgstr ""
+
+#: redux/inc/fields/typography/field_typography.php:280
+#@ redux-framework
+msgid "Font color"
+msgstr ""
+
+#: redux/inc/fields/typography/field_typography.php:520
+#@ redux-framework
+msgid "Google Webfonts"
+msgstr ""
+
+#: redux/inc/validation/color/validation_color.php:15
+#: redux/inc/validation/color_rgba/validation_color_rgba.php:15
+#@ redux
+msgid "This field must be a valid color value."
+msgstr ""
+
+#: redux/inc/validation/comma_numeric/validation_comma_numeric.php:15
+#@ redux
+msgid "You must provide a comma separated list of numerical values for this option."
+msgstr ""
+
+#: redux/inc/validation/date/validation_date.php:15
+#@ redux
+msgid "This field must be a valid date."
+msgstr ""
+
+#: redux/inc/validation/email/validation_email.php:15
+#@ redux
+msgid "You must provide a valid email for this option."
+msgstr ""
+
+#: redux/inc/validation/no_html/validation_no_html.php:15
+#@ redux
+msgid "You must not enter any HTML in this field, all HTML tags have been removed."
+msgstr ""
+
+#: redux/inc/validation/no_special_chars/validation_no_special_chars.php:15
+#@ redux
+msgid "You must not enter any special characters in this field, all special characters have been removed."
+msgstr ""
+
+#: redux/inc/validation/numeric/validation_numeric.php:15
+#@ redux
+msgid "You must provide a numerical value for this option."
+msgstr ""
+
+#: redux/inc/validation/url/validation_url.php:15
+#@ redux
+msgid "You must provide a valid URL for this option."
+msgstr ""
+
+#: search.php:7
+#, php-format
+#@ asteria
+msgid "Search Results for: %s"
+msgstr "Результаты поиска: %s"
+
+#: search.php:8
+#@ asteria
+msgid "Total posts found for"
+msgstr "Найдено записей:"
+
+#: search.php:8
+#@ asteria
+msgid "<span class=\"search-terms\">\""
+msgstr ""
+
+#: search.php:8
+#@ asteria
+msgid "\"</span>"
+msgstr ""
+
+#: search.php:8
+#@ asteria
+msgid " &mdash; "
+msgstr ""
+
+#: share_this.php:4
+#@ asteria
+msgid "this post on Facebook"
+msgstr ""
+
+#: share_this.php:7
+#: share_this.php:13
+#@ asteria
+msgid "this post"
+msgstr ""
+
+#: share_this.php:10
+#@ asteria
+msgid "Submit to"
+msgstr ""
+
+#: share_this.php:16
+#: share_this.php:20
+#: share_this.php:25
+#@ asteria
+msgid "This"
+msgstr ""
+

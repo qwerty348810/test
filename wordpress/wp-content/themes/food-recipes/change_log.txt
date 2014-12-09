@@ -1,0 +1,41 @@
+Version 1.0
+    i) Intial Release
+
+Version: 1.0.1
+	i) Set condition in header.php
+	ii) changed footer copy right text
+	iii) set pagination in index page
+	iv) changed comment form 
+	v) used search form in 404 file
+	vi) changed favicon typo
+	
+Version: 1.0.2
+	i) set image margin on page loading
+	ii) set comment counter condition
+	iii) Set div structure 
+
+Version: 1.0.3
+	i) Fixed a pagination issue
+
+Version: 1.0.4
+	i) Optional custom pagination support added through plugin integration
+	
+Version: 1.0.5
+	i) set post thumbnail size.
+	ii) set languages file.
+	iii) Removed extra plugin code.
+	iv) Removed screen icon function.
+	v) Added images links in readme.txt file
+	vi) Deleted unused masory js file. 
+
+Version: 1.0.6
+	i) form field values set with escaped.
+	ii) change image and screenshot.
+
+Version: 1.0.7
+	i) Added license of images.
+	ii) Added home_url() in place of site_url() in header.php.
+	iii) Changed settings name to the unique name.
+
+Version: 1.0.8
+	i) Changed esc_url() tpo esc_attr() for copyright text option.
