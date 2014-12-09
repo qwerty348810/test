@@ -16,5 +16,7 @@ $nname=( isset($_GET['nname']) ? $_GET['nname'] : '' );
 $sex=( isset($_GET['sex']) ? $_GET['sex'] : '' );
 $loc=( isset($_GET['location']) ? $_GET['location'] : '' );
 $f1=( isset($_GET['f1']) ? $_GET['f1'] : '' );
+$email=(isset($_GET['email']) ? $_GET['email'] : 0 );
+$password=(isset($_GET['password']) ? $_GET['password'] : 0 );
 include_once 'register.phtml';
 ?>
